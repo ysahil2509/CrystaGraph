@@ -55,6 +55,7 @@ def extract_all_tables(xml_dir: str, output_dir: str = "data/tables") -> Dict[st
             "doi": meta.get("doi", ""),
             "title": meta.get("title", ""),
             "abstract": meta.get("abstract", ""),
+            "paragraphs": parsed.get("paragraphs", []),
             "status": "success",
             "tables_count": len(tables),
             "tables": []

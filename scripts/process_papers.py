@@ -1,5 +1,5 @@
 """
-Master Pipeline Execution Script for MatGraph Extractor.
+Master Pipeline Execution Script for CrystaGraph.
 Runs the complete multi-paper table extraction, composition extraction, property mining,
 composition-property linking, evaluation metric calculation, and database ingestion.
 """
@@ -24,6 +24,7 @@ from get_table_from_xmls import extract_all_tables
 from create_train_val_test_data import create_dataset_splits
 from composition_extractor import CompositionExtractor
 from property_extractor import PropertyExtractor
+from text_property_extractor import TextPropertyExtractor
 from linker import KnowledgeLinker
 from evaluator import PipelineEvaluator
 from generate_training_data import generate_relation_pairs
@@ -36,9 +37,9 @@ def run_pipeline(
     processed_dir: str = "data/processed",
     db_path: str = "data/database/matgraph.db"
 ) -> dict:
-    """Executes the complete MatSKRAFT materials informatics pipeline."""
+    """Executes the complete CrystaGraph materials informatics pipeline."""
     print("=" * 70)
-    print("🚀 STARTING MATGRAPH EXTRACTOR KNOWLEDGE MINING PIPELINE")
+    print("🚀 STARTING CRYSTA GRAPH KNOWLEDGE MINING PIPELINE")
     print("=" * 70)
     start_time = time.time()
 
@@ -69,13 +70,21 @@ def run_pipeline(
         json.dump(extracted_compositions, f, indent=2)
     print(f" -> Extracted {len(extracted_compositions)} composition records.")
 
-    # Step 4: Material Property Extraction & Unit Normalization
-    print("\n[Step 4/6] Extracting material properties, values, and units...")
+    # Step 4: Material Property Extraction & Unit Normalization (Tables + Narrative Prose)
+    print("\n[Step 4/6] Extracting material properties, values, and units (Tables + Narrative Prose)...")
     prop_extractor = PropertyExtractor()
-    extracted_properties = prop_extractor.batch_extract(all_tables)
+    table_properties = prop_extractor.batch_extract(all_tables)
+    print(f" -> Extracted {len(table_properties)} property measurements from scientific tables.")
+
+    # Narrative Text Extraction (Extracts properties from abstracts, text paragraphs, and papers without tables)
+    text_extractor = TextPropertyExtractor()
+    text_properties = text_extractor.batch_extract_from_papers(papers_summary["papers"])
+    print(f" -> Extracted {len(text_properties)} property measurements from narrative paper text.")
+
+    extracted_properties = table_properties + text_properties
     with open(os.path.join(extracted_dir, "extracted_properties.json"), "w", encoding="utf-8") as f:
         json.dump(extracted_properties, f, indent=2)
-    print(f" -> Extracted {len(extracted_properties)} property measurements.")
+    print(f" -> Total unified properties extracted: {len(extracted_properties)} records.")
 
     # Step 5: Composition-Property Knowledge Linking
     print("\n[Step 5/6] Associating materials, compositions, and properties into knowledge triples...")
@@ -128,7 +137,7 @@ def run_pipeline(
     return eval_results
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="MatGraph Extractor Knowledge Mining Pipeline")
+    parser = argparse.ArgumentParser(description="CrystaGraph Knowledge Mining Pipeline")
     parser.add_argument("--xml_dir", default="data/raw_xmls", help="Directory containing raw XML papers")
     parser.add_argument("--tables_dir", default="data/tables", help="Directory to save extracted tables")
     parser.add_argument("--extracted_dir", default="data/extracted", help="Directory to save extraction JSONs")

@@ -1,5 +1,5 @@
 """
-Composition-Property Linker for MatSKRAFT.
+Composition-Property Linker for CrystaGraph.
 Associates material entities with their chemical composition profiles and experimental properties
 across intra-table rows and cross-table references within scientific research papers.
 """
@@ -87,6 +87,9 @@ class KnowledgeLinker:
                 "value_numeric": p.get("value_numeric"),
                 "value_raw": p.get("value_raw", ""),
                 "unit": p.get("unit", ""),
+                "si_value": p.get("si_value"),
+                "si_unit": p.get("si_unit", ""),
+                "source_type": p.get("source_type", "table"),
                 "condition": p.get("condition_footnote", ""),
                 "caption": p.get("caption", "")
             })

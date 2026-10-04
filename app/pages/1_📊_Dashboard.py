@@ -19,7 +19,7 @@ from components.charts import (
     plot_per_paper_metrics
 )
 
-st.set_page_config(page_title="Dashboard | MatGraph Extractor", page_icon="📊", layout="wide")
+st.set_page_config(page_title="Dashboard | CrystaGraph", page_icon="📊", layout="wide")
 
 st.title("📊 Pipeline Analytics Dashboard")
 st.caption("Live statistical insights and descriptive summary of the extracted materials knowledge base.")

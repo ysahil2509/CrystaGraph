@@ -12,9 +12,32 @@ venv/
 env/
 .venv/
 
-# Streamlit config
-.streamlit/
-
 # OS specific files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+
+# Office / PowerPoint temporary lock files
+~$*.pptx
+~$*.docx
+~$*.xlsx
+*.tmp
+
+# Temporary uploads / scratch
+data/temp_pdf/*
+!data/temp_pdf/.gitkeep
+
+# IDE and Editor configs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test & coverage
+.pytest_cache/
+.coverage
+htmlcov/

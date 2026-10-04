@@ -1,6 +1,6 @@
 """
 Extracts textual narratives, titles, abstracts, and sections from scientific XML papers.
-Part of the MatSKRAFT downloading and preprocessing pipeline.
+Part of the CrystaGraph downloading and preprocessing pipeline.
 """
 
 import os

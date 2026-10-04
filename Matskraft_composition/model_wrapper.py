@@ -1,5 +1,5 @@
 """
-Model wrapper for MatSKRAFT Composition Extraction.
+Model wrapper for CrystaGraph Composition Extraction.
 Wraps MatSciBERT / HuggingFace transformer sequence tagging models
 with graceful fallback to domain-informed rule-based extraction when
 heavy fine-tuned model checkpoints are not locally present.
@@ -27,9 +27,9 @@ class MatSciBERTCompositionModel:
                 self.tokenizer = AutoTokenizer.from_pretrained(self.model_checkpoint_path)
                 self.model = AutoModelForTokenClassification.from_pretrained(self.model_checkpoint_path)
                 self.is_transformer_loaded = True
-                print(f"[MatSKRAFT] Loaded fine-tuned MatSciBERT checkpoint from {self.model_checkpoint_path}")
+                print(f"[CrystaGraph] Loaded fine-tuned MatSciBERT checkpoint from {self.model_checkpoint_path}")
             except Exception as e:
-                print(f"[MatSKRAFT] Notice: Could not load transformer weights: {e}. Utilizing domain rule engine.")
+                print(f"[CrystaGraph] Notice: Could not load transformer weights: {e}. Utilizing domain rule engine.")
                 self.is_transformer_loaded = False
         else:
             self.is_transformer_loaded = False
@@ -46,5 +46,5 @@ class MatSciBERTCompositionModel:
         return {
             "transformer_available": self.is_transformer_loaded,
             "checkpoint": self.model_checkpoint_path,
-            "mode": "MatSciBERT-DeepLearning" if self.is_transformer_loaded else "MatSKRAFT-DomainHeuristics"
+            "mode": "MatSciBERT-DeepLearning" if self.is_transformer_loaded else "CrystaGraph-DomainHeuristics"
         }

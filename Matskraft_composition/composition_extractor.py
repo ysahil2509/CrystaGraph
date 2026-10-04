@@ -1,5 +1,5 @@
 """
-MatSKRAFT Composition Extractor Module.
+CrystaGraph Composition Extractor Module.
 Extracts material entities, chemical components, mass/atomic/molar fractions,
 and associates them with source papers and tables.
 """

@@ -30,6 +30,9 @@
     "value_numeric": 4.43,
     "value_raw": "4.43",
     "unit": "g/cm\u00b3",
+    "si_value": 4430.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Tensile tests conducted at strain rate of 10^-3 s^-1. Hardness measured using Vickers indenter (HV30).",
     "caption": "Room-temperature mechanical properties and density of investigated titanium alloys."
   },
@@ -64,6 +67,9 @@
     "value_numeric": 880.0,
     "value_raw": "880",
     "unit": "MPa",
+    "si_value": 880.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Tensile tests conducted at strain rate of 10^-3 s^-1. Hardness measured using Vickers indenter (HV30).",
     "caption": "Room-temperature mechanical properties and density of investigated titanium alloys."
   },
@@ -98,6 +104,9 @@
     "value_numeric": 950.0,
     "value_raw": "950",
     "unit": "MPa",
+    "si_value": 950.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Tensile tests conducted at strain rate of 10^-3 s^-1. Hardness measured using Vickers indenter (HV30).",
     "caption": "Room-temperature mechanical properties and density of investigated titanium alloys."
   },
@@ -132,6 +141,9 @@
     "value_numeric": 14.0,
     "value_raw": "14.0",
     "unit": "%",
+    "si_value": 14.0,
+    "si_unit": "%",
+    "source_type": "Table",
     "condition": "Tensile tests conducted at strain rate of 10^-3 s^-1. Hardness measured using Vickers indenter (HV30).",
     "caption": "Room-temperature mechanical properties and density of investigated titanium alloys."
   },
@@ -166,6 +178,9 @@
     "value_numeric": 340.0,
     "value_raw": "340",
     "unit": "HV",
+    "si_value": 340.0,
+    "si_unit": "HV",
+    "source_type": "Table",
     "condition": "Tensile tests conducted at strain rate of 10^-3 s^-1. Hardness measured using Vickers indenter (HV30).",
     "caption": "Room-temperature mechanical properties and density of investigated titanium alloys."
   },
@@ -208,6 +223,9 @@
     "value_numeric": 4.54,
     "value_raw": "4.54",
     "unit": "g/cm\u00b3",
+    "si_value": 4540.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Tensile tests conducted at strain rate of 10^-3 s^-1. Hardness measured using Vickers indenter (HV30).",
     "caption": "Room-temperature mechanical properties and density of investigated titanium alloys."
   },
@@ -250,6 +268,9 @@
     "value_numeric": 990.0,
     "value_raw": "990",
     "unit": "MPa",
+    "si_value": 990.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Tensile tests conducted at strain rate of 10^-3 s^-1. Hardness measured using Vickers indenter (HV30).",
     "caption": "Room-temperature mechanical properties and density of investigated titanium alloys."
   },
@@ -292,6 +313,9 @@
     "value_numeric": 1050.0,
     "value_raw": "1050",
     "unit": "MPa",
+    "si_value": 1050.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Tensile tests conducted at strain rate of 10^-3 s^-1. Hardness measured using Vickers indenter (HV30).",
     "caption": "Room-temperature mechanical properties and density of investigated titanium alloys."
   },
@@ -334,6 +358,9 @@
     "value_numeric": 13.0,
     "value_raw": "13.0",
     "unit": "%",
+    "si_value": 13.0,
+    "si_unit": "%",
+    "source_type": "Table",
     "condition": "Tensile tests conducted at strain rate of 10^-3 s^-1. Hardness measured using Vickers indenter (HV30).",
     "caption": "Room-temperature mechanical properties and density of investigated titanium alloys."
   },
@@ -376,6 +403,9 @@
     "value_numeric": 365.0,
     "value_raw": "365",
     "unit": "HV",
+    "si_value": 365.0,
+    "si_unit": "HV",
+    "source_type": "Table",
     "condition": "Tensile tests conducted at strain rate of 10^-3 s^-1. Hardness measured using Vickers indenter (HV30).",
     "caption": "Room-temperature mechanical properties and density of investigated titanium alloys."
   },
@@ -410,6 +440,9 @@
     "value_numeric": 4.65,
     "value_raw": "4.65",
     "unit": "g/cm\u00b3",
+    "si_value": 4650.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Tensile tests conducted at strain rate of 10^-3 s^-1. Hardness measured using Vickers indenter (HV30).",
     "caption": "Room-temperature mechanical properties and density of investigated titanium alloys."
   },
@@ -444,6 +477,9 @@
     "value_numeric": 1100.0,
     "value_raw": "1100",
     "unit": "MPa",
+    "si_value": 1100.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Tensile tests conducted at strain rate of 10^-3 s^-1. Hardness measured using Vickers indenter (HV30).",
     "caption": "Room-temperature mechanical properties and density of investigated titanium alloys."
   },
@@ -478,6 +514,9 @@
     "value_numeric": 1180.0,
     "value_raw": "1180",
     "unit": "MPa",
+    "si_value": 1180.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Tensile tests conducted at strain rate of 10^-3 s^-1. Hardness measured using Vickers indenter (HV30).",
     "caption": "Room-temperature mechanical properties and density of investigated titanium alloys."
   },
@@ -512,6 +551,9 @@
     "value_numeric": 10.5,
     "value_raw": "10.5",
     "unit": "%",
+    "si_value": 10.5,
+    "si_unit": "%",
+    "source_type": "Table",
     "condition": "Tensile tests conducted at strain rate of 10^-3 s^-1. Hardness measured using Vickers indenter (HV30).",
     "caption": "Room-temperature mechanical properties and density of investigated titanium alloys."
   },
@@ -546,6 +588,9 @@
     "value_numeric": 390.0,
     "value_raw": "390",
     "unit": "HV",
+    "si_value": 390.0,
+    "si_unit": "HV",
+    "source_type": "Table",
     "condition": "Tensile tests conducted at strain rate of 10^-3 s^-1. Hardness measured using Vickers indenter (HV30).",
     "caption": "Room-temperature mechanical properties and density of investigated titanium alloys."
   },
@@ -580,6 +625,9 @@
     "value_numeric": 4.48,
     "value_raw": "4.48",
     "unit": "g/cm\u00b3",
+    "si_value": 4480.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Tensile tests conducted at strain rate of 10^-3 s^-1. Hardness measured using Vickers indenter (HV30).",
     "caption": "Room-temperature mechanical properties and density of investigated titanium alloys."
   },
@@ -614,6 +662,9 @@
     "value_numeric": 820.0,
     "value_raw": "820",
     "unit": "MPa",
+    "si_value": 820.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Tensile tests conducted at strain rate of 10^-3 s^-1. Hardness measured using Vickers indenter (HV30).",
     "caption": "Room-temperature mechanical properties and density of investigated titanium alloys."
   },
@@ -648,6 +699,9 @@
     "value_numeric": 890.0,
     "value_raw": "890",
     "unit": "MPa",
+    "si_value": 890.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Tensile tests conducted at strain rate of 10^-3 s^-1. Hardness measured using Vickers indenter (HV30).",
     "caption": "Room-temperature mechanical properties and density of investigated titanium alloys."
   },
@@ -682,6 +736,9 @@
     "value_numeric": 16.0,
     "value_raw": "16.0",
     "unit": "%",
+    "si_value": 16.0,
+    "si_unit": "%",
+    "source_type": "Table",
     "condition": "Tensile tests conducted at strain rate of 10^-3 s^-1. Hardness measured using Vickers indenter (HV30).",
     "caption": "Room-temperature mechanical properties and density of investigated titanium alloys."
   },
@@ -716,6 +773,9 @@
     "value_numeric": 310.0,
     "value_raw": "310",
     "unit": "HV",
+    "si_value": 310.0,
+    "si_unit": "HV",
+    "source_type": "Table",
     "condition": "Tensile tests conducted at strain rate of 10^-3 s^-1. Hardness measured using Vickers indenter (HV30).",
     "caption": "Room-temperature mechanical properties and density of investigated titanium alloys."
   },
@@ -754,6 +814,9 @@
     "value_numeric": 4.76,
     "value_raw": "4.76",
     "unit": "g/cm\u00b3",
+    "si_value": 4760.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Tensile tests conducted at strain rate of 10^-3 s^-1. Hardness measured using Vickers indenter (HV30).",
     "caption": "Room-temperature mechanical properties and density of investigated titanium alloys."
   },
@@ -792,6 +855,9 @@
     "value_numeric": 1020.0,
     "value_raw": "1020",
     "unit": "MPa",
+    "si_value": 1020.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Tensile tests conducted at strain rate of 10^-3 s^-1. Hardness measured using Vickers indenter (HV30).",
     "caption": "Room-temperature mechanical properties and density of investigated titanium alloys."
   },
@@ -830,6 +896,9 @@
     "value_numeric": 1110.0,
     "value_raw": "1110",
     "unit": "MPa",
+    "si_value": 1110.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Tensile tests conducted at strain rate of 10^-3 s^-1. Hardness measured using Vickers indenter (HV30).",
     "caption": "Room-temperature mechanical properties and density of investigated titanium alloys."
   },
@@ -868,6 +937,9 @@
     "value_numeric": 11.0,
     "value_raw": "11.0",
     "unit": "%",
+    "si_value": 11.0,
+    "si_unit": "%",
+    "source_type": "Table",
     "condition": "Tensile tests conducted at strain rate of 10^-3 s^-1. Hardness measured using Vickers indenter (HV30).",
     "caption": "Room-temperature mechanical properties and density of investigated titanium alloys."
   },
@@ -906,6 +978,9 @@
     "value_numeric": 375.0,
     "value_raw": "375",
     "unit": "HV",
+    "si_value": 375.0,
+    "si_unit": "HV",
+    "source_type": "Table",
     "condition": "Tensile tests conducted at strain rate of 10^-3 s^-1. Hardness measured using Vickers indenter (HV30).",
     "caption": "Room-temperature mechanical properties and density of investigated titanium alloys."
   },
@@ -936,6 +1011,9 @@
     "value_numeric": 160.0,
     "value_raw": "160",
     "unit": "mAh/g",
+    "si_value": 160.0,
+    "si_unit": "mAh/g",
+    "source_type": "Table",
     "condition": "Tested in 2032 coin cells against metallic Lithium counter electrode between 2.5V and 4.3V vs Li/Li+ at 0.1C rate.",
     "caption": "Electrochemical performance parameters and energy density of lithium cathode materials."
   },
@@ -966,6 +1044,9 @@
     "value_numeric": 3.9,
     "value_raw": "3.90",
     "unit": "V",
+    "si_value": 3.9,
+    "si_unit": "V",
+    "source_type": "Table",
     "condition": "Tested in 2032 coin cells against metallic Lithium counter electrode between 2.5V and 4.3V vs Li/Li+ at 0.1C rate.",
     "caption": "Electrochemical performance parameters and energy density of lithium cathode materials."
   },
@@ -996,6 +1077,9 @@
     "value_numeric": 624.0,
     "value_raw": "624",
     "unit": "Wh/kg",
+    "si_value": 624000.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Tested in 2032 coin cells against metallic Lithium counter electrode between 2.5V and 4.3V vs Li/Li+ at 0.1C rate.",
     "caption": "Electrochemical performance parameters and energy density of lithium cathode materials."
   },
@@ -1026,6 +1110,9 @@
     "value_numeric": 92.0,
     "value_raw": "92.0",
     "unit": "%",
+    "si_value": 92.0,
+    "si_unit": "%",
+    "source_type": "Table",
     "condition": "Tested in 2032 coin cells against metallic Lithium counter electrode between 2.5V and 4.3V vs Li/Li+ at 0.1C rate.",
     "caption": "Electrochemical performance parameters and energy density of lithium cathode materials."
   },
@@ -1056,6 +1143,9 @@
     "value_numeric": 2.8,
     "value_raw": "2.80",
     "unit": "g/cm\u00b3",
+    "si_value": 2800.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Tested in 2032 coin cells against metallic Lithium counter electrode between 2.5V and 4.3V vs Li/Li+ at 0.1C rate.",
     "caption": "Electrochemical performance parameters and energy density of lithium cathode materials."
   },
@@ -1090,6 +1180,9 @@
     "value_numeric": 165.0,
     "value_raw": "165",
     "unit": "mAh/g",
+    "si_value": 165.0,
+    "si_unit": "mAh/g",
+    "source_type": "Table",
     "condition": "Tested in 2032 coin cells against metallic Lithium counter electrode between 2.5V and 4.3V vs Li/Li+ at 0.1C rate.",
     "caption": "Electrochemical performance parameters and energy density of lithium cathode materials."
   },
@@ -1124,6 +1217,9 @@
     "value_numeric": 3.45,
     "value_raw": "3.45",
     "unit": "V",
+    "si_value": 3.45,
+    "si_unit": "V",
+    "source_type": "Table",
     "condition": "Tested in 2032 coin cells against metallic Lithium counter electrode between 2.5V and 4.3V vs Li/Li+ at 0.1C rate.",
     "caption": "Electrochemical performance parameters and energy density of lithium cathode materials."
   },
@@ -1158,6 +1254,9 @@
     "value_numeric": 569.0,
     "value_raw": "569",
     "unit": "Wh/kg",
+    "si_value": 569000.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Tested in 2032 coin cells against metallic Lithium counter electrode between 2.5V and 4.3V vs Li/Li+ at 0.1C rate.",
     "caption": "Electrochemical performance parameters and energy density of lithium cathode materials."
   },
@@ -1192,6 +1291,9 @@
     "value_numeric": 98.5,
     "value_raw": "98.5",
     "unit": "%",
+    "si_value": 98.5,
+    "si_unit": "%",
+    "source_type": "Table",
     "condition": "Tested in 2032 coin cells against metallic Lithium counter electrode between 2.5V and 4.3V vs Li/Li+ at 0.1C rate.",
     "caption": "Electrochemical performance parameters and energy density of lithium cathode materials."
   },
@@ -1226,6 +1328,9 @@
     "value_numeric": 1.3,
     "value_raw": "1.30",
     "unit": "g/cm\u00b3",
+    "si_value": 1300.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Tested in 2032 coin cells against metallic Lithium counter electrode between 2.5V and 4.3V vs Li/Li+ at 0.1C rate.",
     "caption": "Electrochemical performance parameters and energy density of lithium cathode materials."
   },
@@ -1260,6 +1365,9 @@
     "value_numeric": 200.0,
     "value_raw": "200",
     "unit": "mAh/g",
+    "si_value": 200.0,
+    "si_unit": "mAh/g",
+    "source_type": "Table",
     "condition": "Tested in 2032 coin cells against metallic Lithium counter electrode between 2.5V and 4.3V vs Li/Li+ at 0.1C rate.",
     "caption": "Electrochemical performance parameters and energy density of lithium cathode materials."
   },
@@ -1294,6 +1402,9 @@
     "value_numeric": 3.75,
     "value_raw": "3.75",
     "unit": "V",
+    "si_value": 3.75,
+    "si_unit": "V",
+    "source_type": "Table",
     "condition": "Tested in 2032 coin cells against metallic Lithium counter electrode between 2.5V and 4.3V vs Li/Li+ at 0.1C rate.",
     "caption": "Electrochemical performance parameters and energy density of lithium cathode materials."
   },
@@ -1328,6 +1439,9 @@
     "value_numeric": 750.0,
     "value_raw": "750",
     "unit": "Wh/kg",
+    "si_value": 750000.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Tested in 2032 coin cells against metallic Lithium counter electrode between 2.5V and 4.3V vs Li/Li+ at 0.1C rate.",
     "caption": "Electrochemical performance parameters and energy density of lithium cathode materials."
   },
@@ -1362,6 +1476,9 @@
     "value_numeric": 88.0,
     "value_raw": "88.0",
     "unit": "%",
+    "si_value": 88.0,
+    "si_unit": "%",
+    "source_type": "Table",
     "condition": "Tested in 2032 coin cells against metallic Lithium counter electrode between 2.5V and 4.3V vs Li/Li+ at 0.1C rate.",
     "caption": "Electrochemical performance parameters and energy density of lithium cathode materials."
   },
@@ -1396,6 +1513,9 @@
     "value_numeric": 2.6,
     "value_raw": "2.60",
     "unit": "g/cm\u00b3",
+    "si_value": 2600.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Tested in 2032 coin cells against metallic Lithium counter electrode between 2.5V and 4.3V vs Li/Li+ at 0.1C rate.",
     "caption": "Electrochemical performance parameters and energy density of lithium cathode materials."
   },
@@ -1434,6 +1554,9 @@
     "value_numeric": 160.0,
     "value_raw": "160",
     "unit": "mAh/g",
+    "si_value": 160.0,
+    "si_unit": "mAh/g",
+    "source_type": "Table",
     "condition": "Tested in 2032 coin cells against metallic Lithium counter electrode between 2.5V and 4.3V vs Li/Li+ at 0.1C rate.",
     "caption": "Electrochemical performance parameters and energy density of lithium cathode materials."
   },
@@ -1472,6 +1595,9 @@
     "value_numeric": 3.8,
     "value_raw": "3.80",
     "unit": "V",
+    "si_value": 3.8,
+    "si_unit": "V",
+    "source_type": "Table",
     "condition": "Tested in 2032 coin cells against metallic Lithium counter electrode between 2.5V and 4.3V vs Li/Li+ at 0.1C rate.",
     "caption": "Electrochemical performance parameters and energy density of lithium cathode materials."
   },
@@ -1510,6 +1636,9 @@
     "value_numeric": 608.0,
     "value_raw": "608",
     "unit": "Wh/kg",
+    "si_value": 608000.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Tested in 2032 coin cells against metallic Lithium counter electrode between 2.5V and 4.3V vs Li/Li+ at 0.1C rate.",
     "caption": "Electrochemical performance parameters and energy density of lithium cathode materials."
   },
@@ -1548,6 +1677,9 @@
     "value_numeric": 94.0,
     "value_raw": "94.0",
     "unit": "%",
+    "si_value": 94.0,
+    "si_unit": "%",
+    "source_type": "Table",
     "condition": "Tested in 2032 coin cells against metallic Lithium counter electrode between 2.5V and 4.3V vs Li/Li+ at 0.1C rate.",
     "caption": "Electrochemical performance parameters and energy density of lithium cathode materials."
   },
@@ -1586,6 +1718,9 @@
     "value_numeric": 2.4,
     "value_raw": "2.40",
     "unit": "g/cm\u00b3",
+    "si_value": 2400.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Tested in 2032 coin cells against metallic Lithium counter electrode between 2.5V and 4.3V vs Li/Li+ at 0.1C rate.",
     "caption": "Electrochemical performance parameters and energy density of lithium cathode materials."
   },
@@ -1616,6 +1751,9 @@
     "value_numeric": 120.0,
     "value_raw": "120",
     "unit": "mAh/g",
+    "si_value": 120.0,
+    "si_unit": "mAh/g",
+    "source_type": "Table",
     "condition": "Tested in 2032 coin cells against metallic Lithium counter electrode between 2.5V and 4.3V vs Li/Li+ at 0.1C rate.",
     "caption": "Electrochemical performance parameters and energy density of lithium cathode materials."
   },
@@ -1646,6 +1784,9 @@
     "value_numeric": 4.05,
     "value_raw": "4.05",
     "unit": "V",
+    "si_value": 4.05,
+    "si_unit": "V",
+    "source_type": "Table",
     "condition": "Tested in 2032 coin cells against metallic Lithium counter electrode between 2.5V and 4.3V vs Li/Li+ at 0.1C rate.",
     "caption": "Electrochemical performance parameters and energy density of lithium cathode materials."
   },
@@ -1676,6 +1817,9 @@
     "value_numeric": 486.0,
     "value_raw": "486",
     "unit": "Wh/kg",
+    "si_value": 486000.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Tested in 2032 coin cells against metallic Lithium counter electrode between 2.5V and 4.3V vs Li/Li+ at 0.1C rate.",
     "caption": "Electrochemical performance parameters and energy density of lithium cathode materials."
   },
@@ -1706,6 +1850,9 @@
     "value_numeric": 82.0,
     "value_raw": "82.0",
     "unit": "%",
+    "si_value": 82.0,
+    "si_unit": "%",
+    "source_type": "Table",
     "condition": "Tested in 2032 coin cells against metallic Lithium counter electrode between 2.5V and 4.3V vs Li/Li+ at 0.1C rate.",
     "caption": "Electrochemical performance parameters and energy density of lithium cathode materials."
   },
@@ -1736,6 +1883,9 @@
     "value_numeric": 2.1,
     "value_raw": "2.10",
     "unit": "g/cm\u00b3",
+    "si_value": 2100.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Tested in 2032 coin cells against metallic Lithium counter electrode between 2.5V and 4.3V vs Li/Li+ at 0.1C rate.",
     "caption": "Electrochemical performance parameters and energy density of lithium cathode materials."
   },
@@ -1762,6 +1912,9 @@
     "value_numeric": 1800.0,
     "value_raw": "1800",
     "unit": "T",
+    "si_value": 1800.0,
+    "si_unit": "T",
+    "source_type": "Table",
     "condition": "Measured at 1 kHz frequency and room temperature (25 deg C).",
     "caption": "Dielectric permittivity, Curie temperature, and piezoelectric coefficients."
   },
@@ -1788,6 +1941,9 @@
     "value_numeric": 0.015,
     "value_raw": "0.015",
     "unit": "T",
+    "si_value": 0.01,
+    "si_unit": "T",
+    "source_type": "Table",
     "condition": "Measured at 1 kHz frequency and room temperature (25 deg C).",
     "caption": "Dielectric permittivity, Curie temperature, and piezoelectric coefficients."
   },
@@ -1814,6 +1970,9 @@
     "value_numeric": 120.0,
     "value_raw": "120",
     "unit": "\u00b0C",
+    "si_value": 393.15,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Measured at 1 kHz frequency and room temperature (25 deg C).",
     "caption": "Dielectric permittivity, Curie temperature, and piezoelectric coefficients."
   },
@@ -1840,6 +1999,9 @@
     "value_numeric": 190.0,
     "value_raw": "190",
     "unit": "pC/N",
+    "si_value": 190.0,
+    "si_unit": "pC/N",
+    "source_type": "Table",
     "condition": "Measured at 1 kHz frequency and room temperature (25 deg C).",
     "caption": "Dielectric permittivity, Curie temperature, and piezoelectric coefficients."
   },
@@ -1866,6 +2028,9 @@
     "value_numeric": 16.0,
     "value_raw": "16.0",
     "unit": "\u00b5C/cm\u00b2",
+    "si_value": 16.0,
+    "si_unit": "\u00b5C/cm\u00b2",
+    "source_type": "Table",
     "condition": "Measured at 1 kHz frequency and room temperature (25 deg C).",
     "caption": "Dielectric permittivity, Curie temperature, and piezoelectric coefficients."
   },
@@ -1896,6 +2061,9 @@
     "value_numeric": 3400.0,
     "value_raw": "3400",
     "unit": "T",
+    "si_value": 3400.0,
+    "si_unit": "T",
+    "source_type": "Table",
     "condition": "Measured at 1 kHz frequency and room temperature (25 deg C).",
     "caption": "Dielectric permittivity, Curie temperature, and piezoelectric coefficients."
   },
@@ -1926,6 +2094,9 @@
     "value_numeric": 0.02,
     "value_raw": "0.020",
     "unit": "T",
+    "si_value": 0.02,
+    "si_unit": "T",
+    "source_type": "Table",
     "condition": "Measured at 1 kHz frequency and room temperature (25 deg C).",
     "caption": "Dielectric permittivity, Curie temperature, and piezoelectric coefficients."
   },
@@ -1956,6 +2127,9 @@
     "value_numeric": 230.0,
     "value_raw": "230",
     "unit": "\u00b0C",
+    "si_value": 503.15,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Measured at 1 kHz frequency and room temperature (25 deg C).",
     "caption": "Dielectric permittivity, Curie temperature, and piezoelectric coefficients."
   },
@@ -1986,6 +2160,9 @@
     "value_numeric": 590.0,
     "value_raw": "590",
     "unit": "pC/N",
+    "si_value": 590.0,
+    "si_unit": "pC/N",
+    "source_type": "Table",
     "condition": "Measured at 1 kHz frequency and room temperature (25 deg C).",
     "caption": "Dielectric permittivity, Curie temperature, and piezoelectric coefficients."
   },
@@ -2016,6 +2193,9 @@
     "value_numeric": 32.0,
     "value_raw": "32.0",
     "unit": "\u00b5C/cm\u00b2",
+    "si_value": 32.0,
+    "si_unit": "\u00b5C/cm\u00b2",
+    "source_type": "Table",
     "condition": "Measured at 1 kHz frequency and room temperature (25 deg C).",
     "caption": "Dielectric permittivity, Curie temperature, and piezoelectric coefficients."
   },
@@ -2046,6 +2226,9 @@
     "value_numeric": 850.0,
     "value_raw": "850",
     "unit": "T",
+    "si_value": 850.0,
+    "si_unit": "T",
+    "source_type": "Table",
     "condition": "Measured at 1 kHz frequency and room temperature (25 deg C).",
     "caption": "Dielectric permittivity, Curie temperature, and piezoelectric coefficients."
   },
@@ -2076,6 +2259,9 @@
     "value_numeric": 0.035,
     "value_raw": "0.035",
     "unit": "T",
+    "si_value": 0.04,
+    "si_unit": "T",
+    "source_type": "Table",
     "condition": "Measured at 1 kHz frequency and room temperature (25 deg C).",
     "caption": "Dielectric permittivity, Curie temperature, and piezoelectric coefficients."
   },
@@ -2106,6 +2292,9 @@
     "value_numeric": 420.0,
     "value_raw": "420",
     "unit": "\u00b0C",
+    "si_value": 693.15,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Measured at 1 kHz frequency and room temperature (25 deg C).",
     "caption": "Dielectric permittivity, Curie temperature, and piezoelectric coefficients."
   },
@@ -2136,6 +2325,9 @@
     "value_numeric": 160.0,
     "value_raw": "160",
     "unit": "pC/N",
+    "si_value": 160.0,
+    "si_unit": "pC/N",
+    "source_type": "Table",
     "condition": "Measured at 1 kHz frequency and room temperature (25 deg C).",
     "caption": "Dielectric permittivity, Curie temperature, and piezoelectric coefficients."
   },
@@ -2166,6 +2358,9 @@
     "value_numeric": 22.5,
     "value_raw": "22.5",
     "unit": "\u00b5C/cm\u00b2",
+    "si_value": 22.5,
+    "si_unit": "\u00b5C/cm\u00b2",
+    "source_type": "Table",
     "condition": "Measured at 1 kHz frequency and room temperature (25 deg C).",
     "caption": "Dielectric permittivity, Curie temperature, and piezoelectric coefficients."
   },
@@ -2196,6 +2391,9 @@
     "value_numeric": 1250.0,
     "value_raw": "1250",
     "unit": "T",
+    "si_value": 1250.0,
+    "si_unit": "T",
+    "source_type": "Table",
     "condition": "Measured at 1 kHz frequency and room temperature (25 deg C).",
     "caption": "Dielectric permittivity, Curie temperature, and piezoelectric coefficients."
   },
@@ -2226,6 +2424,9 @@
     "value_numeric": 0.04,
     "value_raw": "0.040",
     "unit": "T",
+    "si_value": 0.04,
+    "si_unit": "T",
+    "source_type": "Table",
     "condition": "Measured at 1 kHz frequency and room temperature (25 deg C).",
     "caption": "Dielectric permittivity, Curie temperature, and piezoelectric coefficients."
   },
@@ -2256,6 +2457,9 @@
     "value_numeric": 288.0,
     "value_raw": "288",
     "unit": "\u00b0C",
+    "si_value": 561.15,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Measured at 1 kHz frequency and room temperature (25 deg C).",
     "caption": "Dielectric permittivity, Curie temperature, and piezoelectric coefficients."
   },
@@ -2286,6 +2490,9 @@
     "value_numeric": 175.0,
     "value_raw": "175",
     "unit": "pC/N",
+    "si_value": 175.0,
+    "si_unit": "pC/N",
+    "source_type": "Table",
     "condition": "Measured at 1 kHz frequency and room temperature (25 deg C).",
     "caption": "Dielectric permittivity, Curie temperature, and piezoelectric coefficients."
   },
@@ -2316,6 +2523,9 @@
     "value_numeric": 38.0,
     "value_raw": "38.0",
     "unit": "\u00b5C/cm\u00b2",
+    "si_value": 38.0,
+    "si_unit": "\u00b5C/cm\u00b2",
+    "source_type": "Table",
     "condition": "Measured at 1 kHz frequency and room temperature (25 deg C).",
     "caption": "Dielectric permittivity, Curie temperature, and piezoelectric coefficients."
   },
@@ -2333,6 +2543,9 @@
     "value_numeric": 150.0,
     "value_raw": "150",
     "unit": "T",
+    "si_value": 150.0,
+    "si_unit": "T",
+    "source_type": "Table",
     "condition": "Measured at 1 kHz frequency and room temperature (25 deg C).",
     "caption": "Dielectric permittivity, Curie temperature, and piezoelectric coefficients."
   },
@@ -2350,6 +2563,9 @@
     "value_numeric": 0.08,
     "value_raw": "0.080",
     "unit": "T",
+    "si_value": 0.08,
+    "si_unit": "T",
+    "source_type": "Table",
     "condition": "Measured at 1 kHz frequency and room temperature (25 deg C).",
     "caption": "Dielectric permittivity, Curie temperature, and piezoelectric coefficients."
   },
@@ -2367,6 +2583,9 @@
     "value_numeric": 830.0,
     "value_raw": "830",
     "unit": "\u00b0C",
+    "si_value": 1103.15,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Measured at 1 kHz frequency and room temperature (25 deg C).",
     "caption": "Dielectric permittivity, Curie temperature, and piezoelectric coefficients."
   },
@@ -2384,6 +2603,9 @@
     "value_numeric": 45.0,
     "value_raw": "45",
     "unit": "pC/N",
+    "si_value": 45.0,
+    "si_unit": "pC/N",
+    "source_type": "Table",
     "condition": "Measured at 1 kHz frequency and room temperature (25 deg C).",
     "caption": "Dielectric permittivity, Curie temperature, and piezoelectric coefficients."
   },
@@ -2401,6 +2623,9 @@
     "value_numeric": 65.0,
     "value_raw": "65.0",
     "unit": "\u00b5C/cm\u00b2",
+    "si_value": 65.0,
+    "si_unit": "\u00b5C/cm\u00b2",
+    "source_type": "Table",
     "condition": "Measured at 1 kHz frequency and room temperature (25 deg C).",
     "caption": "Dielectric permittivity, Curie temperature, and piezoelectric coefficients."
   },
@@ -2435,6 +2660,9 @@
     "value_numeric": null,
     "value_raw": "Single FCC",
     "unit": "",
+    "si_value": null,
+    "si_unit": "",
+    "source_type": "Table",
     "condition": "Ingots prepared by vacuum arc melting under high-purity argon atmosphere.",
     "caption": "Chemical composition (at.%) and crystal structure of synthesized high-entropy alloys."
   },
@@ -2473,6 +2701,9 @@
     "value_numeric": null,
     "value_raw": "Single FCC",
     "unit": "",
+    "si_value": null,
+    "si_unit": "",
+    "source_type": "Table",
     "condition": "Ingots prepared by vacuum arc melting under high-purity argon atmosphere.",
     "caption": "Chemical composition (at.%) and crystal structure of synthesized high-entropy alloys."
   },
@@ -2511,6 +2742,9 @@
     "value_numeric": null,
     "value_raw": "FCC + minor BCC",
     "unit": "",
+    "si_value": null,
+    "si_unit": "",
+    "source_type": "Table",
     "condition": "Ingots prepared by vacuum arc melting under high-purity argon atmosphere.",
     "caption": "Chemical composition (at.%) and crystal structure of synthesized high-entropy alloys."
   },
@@ -2549,6 +2783,9 @@
     "value_numeric": null,
     "value_raw": "BCC + B2 + FCC",
     "unit": "",
+    "si_value": null,
+    "si_unit": "",
+    "source_type": "Table",
     "condition": "Ingots prepared by vacuum arc melting under high-purity argon atmosphere.",
     "caption": "Chemical composition (at.%) and crystal structure of synthesized high-entropy alloys."
   },
@@ -2587,6 +2824,9 @@
     "value_numeric": 2.0,
     "value_raw": "BCC + B2",
     "unit": "",
+    "si_value": 2.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Ingots prepared by vacuum arc melting under high-purity argon atmosphere.",
     "caption": "Chemical composition (at.%) and crystal structure of synthesized high-entropy alloys."
   },
@@ -2621,6 +2861,9 @@
     "value_numeric": 145.0,
     "value_raw": "145",
     "unit": "HV",
+    "si_value": 145.0,
+    "si_unit": "HV",
+    "source_type": "Table",
     "condition": "Compression testing performed with cylindrical samples of aspect ratio 2:1 at 10^-4 s^-1 strain rate.",
     "caption": "Mechanical properties and density of high-entropy alloys in as-cast condition."
   },
@@ -2655,6 +2898,9 @@
     "value_numeric": 185.0,
     "value_raw": "185",
     "unit": "MPa",
+    "si_value": 185.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Compression testing performed with cylindrical samples of aspect ratio 2:1 at 10^-4 s^-1 strain rate.",
     "caption": "Mechanical properties and density of high-entropy alloys in as-cast condition."
   },
@@ -2689,6 +2935,9 @@
     "value_numeric": 790.0,
     "value_raw": "790",
     "unit": "MPa",
+    "si_value": 790.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Compression testing performed with cylindrical samples of aspect ratio 2:1 at 10^-4 s^-1 strain rate.",
     "caption": "Mechanical properties and density of high-entropy alloys in as-cast condition."
   },
@@ -2723,6 +2972,9 @@
     "value_numeric": 52.0,
     "value_raw": "52.0",
     "unit": "%",
+    "si_value": 52.0,
+    "si_unit": "%",
+    "source_type": "Table",
     "condition": "Compression testing performed with cylindrical samples of aspect ratio 2:1 at 10^-4 s^-1 strain rate.",
     "caption": "Mechanical properties and density of high-entropy alloys in as-cast condition."
   },
@@ -2757,6 +3009,9 @@
     "value_numeric": 8.25,
     "value_raw": "8.25",
     "unit": "g/cm\u00b3",
+    "si_value": 8250.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Compression testing performed with cylindrical samples of aspect ratio 2:1 at 10^-4 s^-1 strain rate.",
     "caption": "Mechanical properties and density of high-entropy alloys in as-cast condition."
   },
@@ -2795,6 +3050,9 @@
     "value_numeric": 160.0,
     "value_raw": "160",
     "unit": "HV",
+    "si_value": 160.0,
+    "si_unit": "HV",
+    "source_type": "Table",
     "condition": "Compression testing performed with cylindrical samples of aspect ratio 2:1 at 10^-4 s^-1 strain rate.",
     "caption": "Mechanical properties and density of high-entropy alloys in as-cast condition."
   },
@@ -2833,6 +3091,9 @@
     "value_numeric": 215.0,
     "value_raw": "215",
     "unit": "MPa",
+    "si_value": 215.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Compression testing performed with cylindrical samples of aspect ratio 2:1 at 10^-4 s^-1 strain rate.",
     "caption": "Mechanical properties and density of high-entropy alloys in as-cast condition."
   },
@@ -2871,6 +3132,9 @@
     "value_numeric": 840.0,
     "value_raw": "840",
     "unit": "MPa",
+    "si_value": 840.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Compression testing performed with cylindrical samples of aspect ratio 2:1 at 10^-4 s^-1 strain rate.",
     "caption": "Mechanical properties and density of high-entropy alloys in as-cast condition."
   },
@@ -2909,6 +3173,9 @@
     "value_numeric": 48.5,
     "value_raw": "48.5",
     "unit": "%",
+    "si_value": 48.5,
+    "si_unit": "%",
+    "source_type": "Table",
     "condition": "Compression testing performed with cylindrical samples of aspect ratio 2:1 at 10^-4 s^-1 strain rate.",
     "caption": "Mechanical properties and density of high-entropy alloys in as-cast condition."
   },
@@ -2947,6 +3214,9 @@
     "value_numeric": 8.04,
     "value_raw": "8.04",
     "unit": "g/cm\u00b3",
+    "si_value": 8040.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Compression testing performed with cylindrical samples of aspect ratio 2:1 at 10^-4 s^-1 strain rate.",
     "caption": "Mechanical properties and density of high-entropy alloys in as-cast condition."
   },
@@ -2985,6 +3255,9 @@
     "value_numeric": 220.0,
     "value_raw": "220",
     "unit": "HV",
+    "si_value": 220.0,
+    "si_unit": "HV",
+    "source_type": "Table",
     "condition": "Compression testing performed with cylindrical samples of aspect ratio 2:1 at 10^-4 s^-1 strain rate.",
     "caption": "Mechanical properties and density of high-entropy alloys in as-cast condition."
   },
@@ -3023,6 +3296,9 @@
     "value_numeric": 310.0,
     "value_raw": "310",
     "unit": "MPa",
+    "si_value": 310.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Compression testing performed with cylindrical samples of aspect ratio 2:1 at 10^-4 s^-1 strain rate.",
     "caption": "Mechanical properties and density of high-entropy alloys in as-cast condition."
   },
@@ -3061,6 +3337,9 @@
     "value_numeric": 980.0,
     "value_raw": "980",
     "unit": "MPa",
+    "si_value": 980.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Compression testing performed with cylindrical samples of aspect ratio 2:1 at 10^-4 s^-1 strain rate.",
     "caption": "Mechanical properties and density of high-entropy alloys in as-cast condition."
   },
@@ -3099,6 +3378,9 @@
     "value_numeric": 39.0,
     "value_raw": "39.0",
     "unit": "%",
+    "si_value": 39.0,
+    "si_unit": "%",
+    "source_type": "Table",
     "condition": "Compression testing performed with cylindrical samples of aspect ratio 2:1 at 10^-4 s^-1 strain rate.",
     "caption": "Mechanical properties and density of high-entropy alloys in as-cast condition."
   },
@@ -3137,6 +3419,9 @@
     "value_numeric": 7.78,
     "value_raw": "7.78",
     "unit": "g/cm\u00b3",
+    "si_value": 7780.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Compression testing performed with cylindrical samples of aspect ratio 2:1 at 10^-4 s^-1 strain rate.",
     "caption": "Mechanical properties and density of high-entropy alloys in as-cast condition."
   },
@@ -3175,6 +3460,9 @@
     "value_numeric": 380.0,
     "value_raw": "380",
     "unit": "HV",
+    "si_value": 380.0,
+    "si_unit": "HV",
+    "source_type": "Table",
     "condition": "Compression testing performed with cylindrical samples of aspect ratio 2:1 at 10^-4 s^-1 strain rate.",
     "caption": "Mechanical properties and density of high-entropy alloys in as-cast condition."
   },
@@ -3213,6 +3501,9 @@
     "value_numeric": 780.0,
     "value_raw": "780",
     "unit": "MPa",
+    "si_value": 780.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Compression testing performed with cylindrical samples of aspect ratio 2:1 at 10^-4 s^-1 strain rate.",
     "caption": "Mechanical properties and density of high-entropy alloys in as-cast condition."
   },
@@ -3251,6 +3542,9 @@
     "value_numeric": 1420.0,
     "value_raw": "1420",
     "unit": "MPa",
+    "si_value": 1420.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Compression testing performed with cylindrical samples of aspect ratio 2:1 at 10^-4 s^-1 strain rate.",
     "caption": "Mechanical properties and density of high-entropy alloys in as-cast condition."
   },
@@ -3289,6 +3583,9 @@
     "value_numeric": 21.5,
     "value_raw": "21.5",
     "unit": "%",
+    "si_value": 21.5,
+    "si_unit": "%",
+    "source_type": "Table",
     "condition": "Compression testing performed with cylindrical samples of aspect ratio 2:1 at 10^-4 s^-1 strain rate.",
     "caption": "Mechanical properties and density of high-entropy alloys in as-cast condition."
   },
@@ -3327,6 +3624,9 @@
     "value_numeric": 7.45,
     "value_raw": "7.45",
     "unit": "g/cm\u00b3",
+    "si_value": 7450.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Compression testing performed with cylindrical samples of aspect ratio 2:1 at 10^-4 s^-1 strain rate.",
     "caption": "Mechanical properties and density of high-entropy alloys in as-cast condition."
   },
@@ -3365,6 +3665,9 @@
     "value_numeric": 510.0,
     "value_raw": "510",
     "unit": "HV",
+    "si_value": 510.0,
+    "si_unit": "HV",
+    "source_type": "Table",
     "condition": "Compression testing performed with cylindrical samples of aspect ratio 2:1 at 10^-4 s^-1 strain rate.",
     "caption": "Mechanical properties and density of high-entropy alloys in as-cast condition."
   },
@@ -3403,6 +3706,9 @@
     "value_numeric": 1250.0,
     "value_raw": "1250",
     "unit": "MPa",
+    "si_value": 1250.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Compression testing performed with cylindrical samples of aspect ratio 2:1 at 10^-4 s^-1 strain rate.",
     "caption": "Mechanical properties and density of high-entropy alloys in as-cast condition."
   },
@@ -3441,6 +3747,9 @@
     "value_numeric": 2050.0,
     "value_raw": "2050",
     "unit": "MPa",
+    "si_value": 2050.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Compression testing performed with cylindrical samples of aspect ratio 2:1 at 10^-4 s^-1 strain rate.",
     "caption": "Mechanical properties and density of high-entropy alloys in as-cast condition."
   },
@@ -3479,6 +3788,9 @@
     "value_numeric": 14.0,
     "value_raw": "14.0",
     "unit": "%",
+    "si_value": 14.0,
+    "si_unit": "%",
+    "source_type": "Table",
     "condition": "Compression testing performed with cylindrical samples of aspect ratio 2:1 at 10^-4 s^-1 strain rate.",
     "caption": "Mechanical properties and density of high-entropy alloys in as-cast condition."
   },
@@ -3517,6 +3829,9 @@
     "value_numeric": 7.15,
     "value_raw": "7.15",
     "unit": "g/cm\u00b3",
+    "si_value": 7150.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Compression testing performed with cylindrical samples of aspect ratio 2:1 at 10^-4 s^-1 strain rate.",
     "caption": "Mechanical properties and density of high-entropy alloys in as-cast condition."
   },
@@ -3559,6 +3874,9 @@
     "value_numeric": 2.73,
     "value_raw": "2.73",
     "unit": "g/cm\u00b3",
+    "si_value": 2730.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Glass transition determined via differential thermal analysis (DTA) at 10 K/min heating rate.",
     "caption": "Physical, thermal, and mechanical properties of investigated glass formulations."
   },
@@ -3601,6 +3919,9 @@
     "value_numeric": 535.0,
     "value_raw": "535",
     "unit": "\u00b0C",
+    "si_value": 808.15,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Glass transition determined via differential thermal analysis (DTA) at 10 K/min heating rate.",
     "caption": "Physical, thermal, and mechanical properties of investigated glass formulations."
   },
@@ -3643,6 +3964,9 @@
     "value_numeric": 15.1,
     "value_raw": "15.1",
     "unit": "K",
+    "si_value": 15.1,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Glass transition determined via differential thermal analysis (DTA) at 10 K/min heating rate.",
     "caption": "Physical, thermal, and mechanical properties of investigated glass formulations."
   },
@@ -3685,6 +4009,9 @@
     "value_numeric": 35.0,
     "value_raw": "35.0",
     "unit": "GPa",
+    "si_value": 35.0,
+    "si_unit": "GPa",
+    "source_type": "Table",
     "condition": "Glass transition determined via differential thermal analysis (DTA) at 10 K/min heating rate.",
     "caption": "Physical, thermal, and mechanical properties of investigated glass formulations."
   },
@@ -3727,6 +4054,9 @@
     "value_numeric": 4.5,
     "value_raw": "4.5",
     "unit": "GPa",
+    "si_value": 4.5,
+    "si_unit": "HV",
+    "source_type": "Table",
     "condition": "Glass transition determined via differential thermal analysis (DTA) at 10 K/min heating rate.",
     "caption": "Physical, thermal, and mechanical properties of investigated glass formulations."
   },
@@ -3777,6 +4107,9 @@
     "value_numeric": 2.68,
     "value_raw": "2.68",
     "unit": "g/cm\u00b3",
+    "si_value": 2680.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Glass transition determined via differential thermal analysis (DTA) at 10 K/min heating rate.",
     "caption": "Physical, thermal, and mechanical properties of investigated glass formulations."
   },
@@ -3827,6 +4160,9 @@
     "value_numeric": 605.0,
     "value_raw": "605",
     "unit": "\u00b0C",
+    "si_value": 878.15,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Glass transition determined via differential thermal analysis (DTA) at 10 K/min heating rate.",
     "caption": "Physical, thermal, and mechanical properties of investigated glass formulations."
   },
@@ -3877,6 +4213,9 @@
     "value_numeric": 12.8,
     "value_raw": "12.8",
     "unit": "K",
+    "si_value": 12.8,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Glass transition determined via differential thermal analysis (DTA) at 10 K/min heating rate.",
     "caption": "Physical, thermal, and mechanical properties of investigated glass formulations."
   },
@@ -3927,6 +4266,9 @@
     "value_numeric": 68.0,
     "value_raw": "68.0",
     "unit": "GPa",
+    "si_value": 68.0,
+    "si_unit": "GPa",
+    "source_type": "Table",
     "condition": "Glass transition determined via differential thermal analysis (DTA) at 10 K/min heating rate.",
     "caption": "Physical, thermal, and mechanical properties of investigated glass formulations."
   },
@@ -3977,6 +4319,9 @@
     "value_numeric": 5.8,
     "value_raw": "5.8",
     "unit": "GPa",
+    "si_value": 5.8,
+    "si_unit": "HV",
+    "source_type": "Table",
     "condition": "Glass transition determined via differential thermal analysis (DTA) at 10 K/min heating rate.",
     "caption": "Physical, thermal, and mechanical properties of investigated glass formulations."
   },
@@ -4023,6 +4368,9 @@
     "value_numeric": 2.61,
     "value_raw": "2.61",
     "unit": "g/cm\u00b3",
+    "si_value": 2610.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Glass transition determined via differential thermal analysis (DTA) at 10 K/min heating rate.",
     "caption": "Physical, thermal, and mechanical properties of investigated glass formulations."
   },
@@ -4069,6 +4417,9 @@
     "value_numeric": 495.0,
     "value_raw": "495",
     "unit": "\u00b0C",
+    "si_value": 768.15,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Glass transition determined via differential thermal analysis (DTA) at 10 K/min heating rate.",
     "caption": "Physical, thermal, and mechanical properties of investigated glass formulations."
   },
@@ -4115,6 +4466,9 @@
     "value_numeric": 14.2,
     "value_raw": "14.2",
     "unit": "K",
+    "si_value": 14.2,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Glass transition determined via differential thermal analysis (DTA) at 10 K/min heating rate.",
     "caption": "Physical, thermal, and mechanical properties of investigated glass formulations."
   },
@@ -4161,6 +4515,9 @@
     "value_numeric": 42.0,
     "value_raw": "42.0",
     "unit": "GPa",
+    "si_value": 42.0,
+    "si_unit": "GPa",
+    "source_type": "Table",
     "condition": "Glass transition determined via differential thermal analysis (DTA) at 10 K/min heating rate.",
     "caption": "Physical, thermal, and mechanical properties of investigated glass formulations."
   },
@@ -4207,6 +4564,9 @@
     "value_numeric": 4.1,
     "value_raw": "4.1",
     "unit": "GPa",
+    "si_value": 4.1,
+    "si_unit": "HV",
+    "source_type": "Table",
     "condition": "Glass transition determined via differential thermal analysis (DTA) at 10 K/min heating rate.",
     "caption": "Physical, thermal, and mechanical properties of investigated glass formulations."
   },
@@ -4253,6 +4613,9 @@
     "value_numeric": 2.78,
     "value_raw": "2.78",
     "unit": "g/cm\u00b3",
+    "si_value": 2780.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Glass transition determined via differential thermal analysis (DTA) at 10 K/min heating rate.",
     "caption": "Physical, thermal, and mechanical properties of investigated glass formulations."
   },
@@ -4299,6 +4662,9 @@
     "value_numeric": 560.0,
     "value_raw": "560",
     "unit": "\u00b0C",
+    "si_value": 833.15,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Glass transition determined via differential thermal analysis (DTA) at 10 K/min heating rate.",
     "caption": "Physical, thermal, and mechanical properties of investigated glass formulations."
   },
@@ -4345,6 +4711,9 @@
     "value_numeric": 13.5,
     "value_raw": "13.5",
     "unit": "K",
+    "si_value": 13.5,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Glass transition determined via differential thermal analysis (DTA) at 10 K/min heating rate.",
     "caption": "Physical, thermal, and mechanical properties of investigated glass formulations."
   },
@@ -4391,6 +4760,9 @@
     "value_numeric": 52.0,
     "value_raw": "52.0",
     "unit": "GPa",
+    "si_value": 52.0,
+    "si_unit": "GPa",
+    "source_type": "Table",
     "condition": "Glass transition determined via differential thermal analysis (DTA) at 10 K/min heating rate.",
     "caption": "Physical, thermal, and mechanical properties of investigated glass formulations."
   },
@@ -4437,6 +4809,9 @@
     "value_numeric": 5.2,
     "value_raw": "5.2",
     "unit": "GPa",
+    "si_value": 5.2,
+    "si_unit": "HV",
+    "source_type": "Table",
     "condition": "Glass transition determined via differential thermal analysis (DTA) at 10 K/min heating rate.",
     "caption": "Physical, thermal, and mechanical properties of investigated glass formulations."
   },
@@ -4479,6 +4854,9 @@
     "value_numeric": 2.23,
     "value_raw": "2.23",
     "unit": "g/cm\u00b3",
+    "si_value": 2230.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Glass transition determined via differential thermal analysis (DTA) at 10 K/min heating rate.",
     "caption": "Physical, thermal, and mechanical properties of investigated glass formulations."
   },
@@ -4521,6 +4899,9 @@
     "value_numeric": 525.0,
     "value_raw": "525",
     "unit": "\u00b0C",
+    "si_value": 798.15,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Glass transition determined via differential thermal analysis (DTA) at 10 K/min heating rate.",
     "caption": "Physical, thermal, and mechanical properties of investigated glass formulations."
   },
@@ -4563,6 +4944,9 @@
     "value_numeric": 3.3,
     "value_raw": "3.3",
     "unit": "K",
+    "si_value": 3.3,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Glass transition determined via differential thermal analysis (DTA) at 10 K/min heating rate.",
     "caption": "Physical, thermal, and mechanical properties of investigated glass formulations."
   },
@@ -4605,6 +4989,9 @@
     "value_numeric": 64.0,
     "value_raw": "64.0",
     "unit": "GPa",
+    "si_value": 64.0,
+    "si_unit": "GPa",
+    "source_type": "Table",
     "condition": "Glass transition determined via differential thermal analysis (DTA) at 10 K/min heating rate.",
     "caption": "Physical, thermal, and mechanical properties of investigated glass formulations."
   },
@@ -4647,6 +5034,9 @@
     "value_numeric": 5.9,
     "value_raw": "5.9",
     "unit": "GPa",
+    "si_value": 5.9,
+    "si_unit": "HV",
+    "source_type": "Table",
     "condition": "Glass transition determined via differential thermal analysis (DTA) at 10 K/min heating rate.",
     "caption": "Physical, thermal, and mechanical properties of investigated glass formulations."
   },
@@ -4681,6 +5071,9 @@
     "value_numeric": 92.0,
     "value_raw": "92.0",
     "unit": "K",
+    "si_value": 92.0,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Critical temperature Tc determined at 50% resistive transition drop. Jc measured at 4.2 K in self-field.",
     "caption": "Superconducting transition parameters and critical current capabilities."
   },
@@ -4715,6 +5108,9 @@
     "value_numeric": 120.0,
     "value_raw": "120",
     "unit": "T",
+    "si_value": 120.0,
+    "si_unit": "T",
+    "source_type": "Table",
     "condition": "Critical temperature Tc determined at 50% resistive transition drop. Jc measured at 4.2 K in self-field.",
     "caption": "Superconducting transition parameters and critical current capabilities."
   },
@@ -4749,6 +5145,9 @@
     "value_numeric": 3.5,
     "value_raw": "3.5",
     "unit": "MA/cm\u00b2",
+    "si_value": 3500.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Critical temperature Tc determined at 50% resistive transition drop. Jc measured at 4.2 K in self-field.",
     "caption": "Superconducting transition parameters and critical current capabilities."
   },
@@ -4783,6 +5182,9 @@
     "value_numeric": 1.5,
     "value_raw": "1.5",
     "unit": "nm",
+    "si_value": 1.5,
+    "si_unit": "nm",
+    "source_type": "Table",
     "condition": "Critical temperature Tc determined at 50% resistive transition drop. Jc measured at 4.2 K in self-field.",
     "caption": "Superconducting transition parameters and critical current capabilities."
   },
@@ -4817,6 +5219,9 @@
     "value_numeric": 140.0,
     "value_raw": "140",
     "unit": "nm",
+    "si_value": 140.0,
+    "si_unit": "nm",
+    "source_type": "Table",
     "condition": "Critical temperature Tc determined at 50% resistive transition drop. Jc measured at 4.2 K in self-field.",
     "caption": "Superconducting transition parameters and critical current capabilities."
   },
@@ -4855,6 +5260,9 @@
     "value_numeric": 110.0,
     "value_raw": "110.0",
     "unit": "K",
+    "si_value": 110.0,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Critical temperature Tc determined at 50% resistive transition drop. Jc measured at 4.2 K in self-field.",
     "caption": "Superconducting transition parameters and critical current capabilities."
   },
@@ -4893,6 +5301,9 @@
     "value_numeric": 100.0,
     "value_raw": "100",
     "unit": "T",
+    "si_value": 100.0,
+    "si_unit": "T",
+    "source_type": "Table",
     "condition": "Critical temperature Tc determined at 50% resistive transition drop. Jc measured at 4.2 K in self-field.",
     "caption": "Superconducting transition parameters and critical current capabilities."
   },
@@ -4931,6 +5342,9 @@
     "value_numeric": 2.1,
     "value_raw": "2.1",
     "unit": "MA/cm\u00b2",
+    "si_value": 2100.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Critical temperature Tc determined at 50% resistive transition drop. Jc measured at 4.2 K in self-field.",
     "caption": "Superconducting transition parameters and critical current capabilities."
   },
@@ -4969,6 +5383,9 @@
     "value_numeric": 1.3,
     "value_raw": "1.3",
     "unit": "nm",
+    "si_value": 1.3,
+    "si_unit": "nm",
+    "source_type": "Table",
     "condition": "Critical temperature Tc determined at 50% resistive transition drop. Jc measured at 4.2 K in self-field.",
     "caption": "Superconducting transition parameters and critical current capabilities."
   },
@@ -5007,6 +5424,9 @@
     "value_numeric": 200.0,
     "value_raw": "200",
     "unit": "nm",
+    "si_value": 200.0,
+    "si_unit": "nm",
+    "source_type": "Table",
     "condition": "Critical temperature Tc determined at 50% resistive transition drop. Jc measured at 4.2 K in self-field.",
     "caption": "Superconducting transition parameters and critical current capabilities."
   },
@@ -5037,6 +5457,9 @@
     "value_numeric": 39.0,
     "value_raw": "39.0",
     "unit": "K",
+    "si_value": 39.0,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Critical temperature Tc determined at 50% resistive transition drop. Jc measured at 4.2 K in self-field.",
     "caption": "Superconducting transition parameters and critical current capabilities."
   },
@@ -5067,6 +5490,9 @@
     "value_numeric": 40.0,
     "value_raw": "40",
     "unit": "T",
+    "si_value": 40.0,
+    "si_unit": "T",
+    "source_type": "Table",
     "condition": "Critical temperature Tc determined at 50% resistive transition drop. Jc measured at 4.2 K in self-field.",
     "caption": "Superconducting transition parameters and critical current capabilities."
   },
@@ -5097,6 +5523,9 @@
     "value_numeric": 10.0,
     "value_raw": "10.0",
     "unit": "MA/cm\u00b2",
+    "si_value": 10000.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Critical temperature Tc determined at 50% resistive transition drop. Jc measured at 4.2 K in self-field.",
     "caption": "Superconducting transition parameters and critical current capabilities."
   },
@@ -5127,6 +5556,9 @@
     "value_numeric": 5.2,
     "value_raw": "5.2",
     "unit": "nm",
+    "si_value": 5.2,
+    "si_unit": "nm",
+    "source_type": "Table",
     "condition": "Critical temperature Tc determined at 50% resistive transition drop. Jc measured at 4.2 K in self-field.",
     "caption": "Superconducting transition parameters and critical current capabilities."
   },
@@ -5157,6 +5589,9 @@
     "value_numeric": 85.0,
     "value_raw": "85",
     "unit": "nm",
+    "si_value": 85.0,
+    "si_unit": "nm",
+    "source_type": "Table",
     "condition": "Critical temperature Tc determined at 50% resistive transition drop. Jc measured at 4.2 K in self-field.",
     "caption": "Superconducting transition parameters and critical current capabilities."
   },
@@ -5187,6 +5622,9 @@
     "value_numeric": 8.5,
     "value_raw": "8.5",
     "unit": "K",
+    "si_value": 8.5,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Critical temperature Tc determined at 50% resistive transition drop. Jc measured at 4.2 K in self-field.",
     "caption": "Superconducting transition parameters and critical current capabilities."
   },
@@ -5217,6 +5655,9 @@
     "value_numeric": 16.0,
     "value_raw": "16",
     "unit": "T",
+    "si_value": 16.0,
+    "si_unit": "T",
+    "source_type": "Table",
     "condition": "Critical temperature Tc determined at 50% resistive transition drop. Jc measured at 4.2 K in self-field.",
     "caption": "Superconducting transition parameters and critical current capabilities."
   },
@@ -5247,6 +5688,9 @@
     "value_numeric": 0.5,
     "value_raw": "0.5",
     "unit": "MA/cm\u00b2",
+    "si_value": 500.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Critical temperature Tc determined at 50% resistive transition drop. Jc measured at 4.2 K in self-field.",
     "caption": "Superconducting transition parameters and critical current capabilities."
   },
@@ -5277,6 +5721,9 @@
     "value_numeric": 4.0,
     "value_raw": "4.0",
     "unit": "nm",
+    "si_value": 4.0,
+    "si_unit": "nm",
+    "source_type": "Table",
     "condition": "Critical temperature Tc determined at 50% resistive transition drop. Jc measured at 4.2 K in self-field.",
     "caption": "Superconducting transition parameters and critical current capabilities."
   },
@@ -5307,6 +5754,9 @@
     "value_numeric": 390.0,
     "value_raw": "390",
     "unit": "nm",
+    "si_value": 390.0,
+    "si_unit": "nm",
+    "source_type": "Table",
     "condition": "Critical temperature Tc determined at 50% resistive transition drop. Jc measured at 4.2 K in self-field.",
     "caption": "Superconducting transition parameters and critical current capabilities."
   },
@@ -5345,6 +5795,9 @@
     "value_numeric": 85.0,
     "value_raw": "85.0",
     "unit": "K",
+    "si_value": 85.0,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Critical temperature Tc determined at 50% resistive transition drop. Jc measured at 4.2 K in self-field.",
     "caption": "Superconducting transition parameters and critical current capabilities."
   },
@@ -5383,6 +5836,9 @@
     "value_numeric": 90.0,
     "value_raw": "90",
     "unit": "T",
+    "si_value": 90.0,
+    "si_unit": "T",
+    "source_type": "Table",
     "condition": "Critical temperature Tc determined at 50% resistive transition drop. Jc measured at 4.2 K in self-field.",
     "caption": "Superconducting transition parameters and critical current capabilities."
   },
@@ -5421,6 +5877,9 @@
     "value_numeric": 1.8,
     "value_raw": "1.8",
     "unit": "MA/cm\u00b2",
+    "si_value": 1800.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Critical temperature Tc determined at 50% resistive transition drop. Jc measured at 4.2 K in self-field.",
     "caption": "Superconducting transition parameters and critical current capabilities."
   },
@@ -5459,6 +5918,9 @@
     "value_numeric": 1.6,
     "value_raw": "1.6",
     "unit": "nm",
+    "si_value": 1.6,
+    "si_unit": "nm",
+    "source_type": "Table",
     "condition": "Critical temperature Tc determined at 50% resistive transition drop. Jc measured at 4.2 K in self-field.",
     "caption": "Superconducting transition parameters and critical current capabilities."
   },
@@ -5497,6 +5959,9 @@
     "value_numeric": 220.0,
     "value_raw": "220",
     "unit": "nm",
+    "si_value": 220.0,
+    "si_unit": "nm",
+    "source_type": "Table",
     "condition": "Critical temperature Tc determined at 50% resistive transition drop. Jc measured at 4.2 K in self-field.",
     "caption": "Superconducting transition parameters and critical current capabilities."
   },
@@ -5527,6 +5992,9 @@
     "value_numeric": 225.0,
     "value_raw": "225",
     "unit": "\u00b5V/K",
+    "si_value": 225.0,
+    "si_unit": "\u00b5V/K",
+    "source_type": "Table",
     "condition": "Seebeck coefficient and electrical conductivity measured via four-probe differential method.",
     "caption": "Thermoelectric transport coefficients, thermal conductivity, and ZT values at 300 K and peak temperature."
   },
@@ -5557,6 +6025,9 @@
     "value_numeric": 980.0,
     "value_raw": "980",
     "unit": "S/cm",
+    "si_value": 98000.0,
+    "si_unit": "S/m",
+    "source_type": "Table",
     "condition": "Seebeck coefficient and electrical conductivity measured via four-probe differential method.",
     "caption": "Thermoelectric transport coefficients, thermal conductivity, and ZT values at 300 K and peak temperature."
   },
@@ -5587,6 +6058,9 @@
     "value_numeric": 1.2,
     "value_raw": "1.20",
     "unit": "W/m\u00b7K",
+    "si_value": 1.2,
+    "si_unit": "W/(m\u00b7K)",
+    "source_type": "Table",
     "condition": "Seebeck coefficient and electrical conductivity measured via four-probe differential method.",
     "caption": "Thermoelectric transport coefficients, thermal conductivity, and ZT values at 300 K and peak temperature."
   },
@@ -5617,6 +6091,9 @@
     "value_numeric": 49.6,
     "value_raw": "49.6",
     "unit": "\u00b5W/cm\u00b7K\u00b2",
+    "si_value": 49.6,
+    "si_unit": "\u00b5W/cm\u00b7K\u00b2",
+    "source_type": "Table",
     "condition": "Seebeck coefficient and electrical conductivity measured via four-probe differential method.",
     "caption": "Thermoelectric transport coefficients, thermal conductivity, and ZT values at 300 K and peak temperature."
   },
@@ -5647,6 +6124,9 @@
     "value_numeric": 1.25,
     "value_raw": "1.25",
     "unit": "T",
+    "si_value": 1.25,
+    "si_unit": "T",
+    "source_type": "Table",
     "condition": "Seebeck coefficient and electrical conductivity measured via four-probe differential method.",
     "caption": "Thermoelectric transport coefficients, thermal conductivity, and ZT values at 300 K and peak temperature."
   },
@@ -5677,6 +6157,9 @@
     "value_numeric": -210.0,
     "value_raw": "-210",
     "unit": "\u00b5V/K",
+    "si_value": -210.0,
+    "si_unit": "\u00b5V/K",
+    "source_type": "Table",
     "condition": "Seebeck coefficient and electrical conductivity measured via four-probe differential method.",
     "caption": "Thermoelectric transport coefficients, thermal conductivity, and ZT values at 300 K and peak temperature."
   },
@@ -5707,6 +6190,9 @@
     "value_numeric": 1150.0,
     "value_raw": "1150",
     "unit": "S/cm",
+    "si_value": 115000.0,
+    "si_unit": "S/m",
+    "source_type": "Table",
     "condition": "Seebeck coefficient and electrical conductivity measured via four-probe differential method.",
     "caption": "Thermoelectric transport coefficients, thermal conductivity, and ZT values at 300 K and peak temperature."
   },
@@ -5737,6 +6223,9 @@
     "value_numeric": 1.35,
     "value_raw": "1.35",
     "unit": "W/m\u00b7K",
+    "si_value": 1.35,
+    "si_unit": "W/(m\u00b7K)",
+    "source_type": "Table",
     "condition": "Seebeck coefficient and electrical conductivity measured via four-probe differential method.",
     "caption": "Thermoelectric transport coefficients, thermal conductivity, and ZT values at 300 K and peak temperature."
   },
@@ -5767,6 +6256,9 @@
     "value_numeric": 50.7,
     "value_raw": "50.7",
     "unit": "\u00b5W/cm\u00b7K\u00b2",
+    "si_value": 50.7,
+    "si_unit": "\u00b5W/cm\u00b7K\u00b2",
+    "source_type": "Table",
     "condition": "Seebeck coefficient and electrical conductivity measured via four-probe differential method.",
     "caption": "Thermoelectric transport coefficients, thermal conductivity, and ZT values at 300 K and peak temperature."
   },
@@ -5797,6 +6289,9 @@
     "value_numeric": 1.1,
     "value_raw": "1.10",
     "unit": "T",
+    "si_value": 1.1,
+    "si_unit": "T",
+    "source_type": "Table",
     "condition": "Seebeck coefficient and electrical conductivity measured via four-probe differential method.",
     "caption": "Thermoelectric transport coefficients, thermal conductivity, and ZT values at 300 K and peak temperature."
   },
@@ -5823,6 +6318,9 @@
     "value_numeric": 240.0,
     "value_raw": "240",
     "unit": "\u00b5V/K",
+    "si_value": 240.0,
+    "si_unit": "\u00b5V/K",
+    "source_type": "Table",
     "condition": "Seebeck coefficient and electrical conductivity measured via four-probe differential method.",
     "caption": "Thermoelectric transport coefficients, thermal conductivity, and ZT values at 300 K and peak temperature."
   },
@@ -5849,6 +6347,9 @@
     "value_numeric": 620.0,
     "value_raw": "620",
     "unit": "S/cm",
+    "si_value": 62000.0,
+    "si_unit": "S/m",
+    "source_type": "Table",
     "condition": "Seebeck coefficient and electrical conductivity measured via four-probe differential method.",
     "caption": "Thermoelectric transport coefficients, thermal conductivity, and ZT values at 300 K and peak temperature."
   },
@@ -5875,6 +6376,9 @@
     "value_numeric": 1.45,
     "value_raw": "1.45",
     "unit": "W/m\u00b7K",
+    "si_value": 1.45,
+    "si_unit": "W/(m\u00b7K)",
+    "source_type": "Table",
     "condition": "Seebeck coefficient and electrical conductivity measured via four-probe differential method.",
     "caption": "Thermoelectric transport coefficients, thermal conductivity, and ZT values at 300 K and peak temperature."
   },
@@ -5901,6 +6405,9 @@
     "value_numeric": 35.7,
     "value_raw": "35.7",
     "unit": "\u00b5W/cm\u00b7K\u00b2",
+    "si_value": 35.7,
+    "si_unit": "\u00b5W/cm\u00b7K\u00b2",
+    "source_type": "Table",
     "condition": "Seebeck coefficient and electrical conductivity measured via four-probe differential method.",
     "caption": "Thermoelectric transport coefficients, thermal conductivity, and ZT values at 300 K and peak temperature."
   },
@@ -5927,6 +6434,9 @@
     "value_numeric": 1.7,
     "value_raw": "1.70",
     "unit": "T",
+    "si_value": 1.7,
+    "si_unit": "T",
+    "source_type": "Table",
     "condition": "Seebeck coefficient and electrical conductivity measured via four-probe differential method.",
     "caption": "Thermoelectric transport coefficients, thermal conductivity, and ZT values at 300 K and peak temperature."
   },
@@ -5953,6 +6463,9 @@
     "value_numeric": -195.0,
     "value_raw": "-195",
     "unit": "\u00b5V/K",
+    "si_value": -195.0,
+    "si_unit": "\u00b5V/K",
+    "source_type": "Table",
     "condition": "Seebeck coefficient and electrical conductivity measured via four-probe differential method.",
     "caption": "Thermoelectric transport coefficients, thermal conductivity, and ZT values at 300 K and peak temperature."
   },
@@ -5979,6 +6492,9 @@
     "value_numeric": 850.0,
     "value_raw": "850",
     "unit": "S/cm",
+    "si_value": 85000.0,
+    "si_unit": "S/m",
+    "source_type": "Table",
     "condition": "Seebeck coefficient and electrical conductivity measured via four-probe differential method.",
     "caption": "Thermoelectric transport coefficients, thermal conductivity, and ZT values at 300 K and peak temperature."
   },
@@ -6005,6 +6521,9 @@
     "value_numeric": 1.6,
     "value_raw": "1.60",
     "unit": "W/m\u00b7K",
+    "si_value": 1.6,
+    "si_unit": "W/(m\u00b7K)",
+    "source_type": "Table",
     "condition": "Seebeck coefficient and electrical conductivity measured via four-probe differential method.",
     "caption": "Thermoelectric transport coefficients, thermal conductivity, and ZT values at 300 K and peak temperature."
   },
@@ -6031,6 +6550,9 @@
     "value_numeric": 32.3,
     "value_raw": "32.3",
     "unit": "\u00b5W/cm\u00b7K\u00b2",
+    "si_value": 32.3,
+    "si_unit": "\u00b5W/cm\u00b7K\u00b2",
+    "source_type": "Table",
     "condition": "Seebeck coefficient and electrical conductivity measured via four-probe differential method.",
     "caption": "Thermoelectric transport coefficients, thermal conductivity, and ZT values at 300 K and peak temperature."
   },
@@ -6057,6 +6579,9 @@
     "value_numeric": 1.4,
     "value_raw": "1.40",
     "unit": "T",
+    "si_value": 1.4,
+    "si_unit": "T",
+    "source_type": "Table",
     "condition": "Seebeck coefficient and electrical conductivity measured via four-probe differential method.",
     "caption": "Thermoelectric transport coefficients, thermal conductivity, and ZT values at 300 K and peak temperature."
   },
@@ -6079,6 +6604,9 @@
     "value_numeric": 480.0,
     "value_raw": "480",
     "unit": "\u00b5V/K",
+    "si_value": 480.0,
+    "si_unit": "\u00b5V/K",
+    "source_type": "Table",
     "condition": "Seebeck coefficient and electrical conductivity measured via four-probe differential method.",
     "caption": "Thermoelectric transport coefficients, thermal conductivity, and ZT values at 300 K and peak temperature."
   },
@@ -6101,6 +6629,9 @@
     "value_numeric": 45.0,
     "value_raw": "45",
     "unit": "S/cm",
+    "si_value": 4500.0,
+    "si_unit": "S/m",
+    "source_type": "Table",
     "condition": "Seebeck coefficient and electrical conductivity measured via four-probe differential method.",
     "caption": "Thermoelectric transport coefficients, thermal conductivity, and ZT values at 300 K and peak temperature."
   },
@@ -6123,6 +6654,9 @@
     "value_numeric": 0.45,
     "value_raw": "0.45",
     "unit": "W/m\u00b7K",
+    "si_value": 0.45,
+    "si_unit": "W/(m\u00b7K)",
+    "source_type": "Table",
     "condition": "Seebeck coefficient and electrical conductivity measured via four-probe differential method.",
     "caption": "Thermoelectric transport coefficients, thermal conductivity, and ZT values at 300 K and peak temperature."
   },
@@ -6145,6 +6679,9 @@
     "value_numeric": 10.4,
     "value_raw": "10.4",
     "unit": "\u00b5W/cm\u00b7K\u00b2",
+    "si_value": 10.4,
+    "si_unit": "\u00b5W/cm\u00b7K\u00b2",
+    "source_type": "Table",
     "condition": "Seebeck coefficient and electrical conductivity measured via four-probe differential method.",
     "caption": "Thermoelectric transport coefficients, thermal conductivity, and ZT values at 300 K and peak temperature."
   },
@@ -6167,6 +6704,9 @@
     "value_numeric": 2.6,
     "value_raw": "2.60",
     "unit": "T",
+    "si_value": 2.6,
+    "si_unit": "T",
+    "source_type": "Table",
     "condition": "Seebeck coefficient and electrical conductivity measured via four-probe differential method.",
     "caption": "Thermoelectric transport coefficients, thermal conductivity, and ZT values at 300 K and peak temperature."
   },
@@ -6205,6 +6745,9 @@
     "value_numeric": 2.78,
     "value_raw": "2.78",
     "unit": "g/cm\u00b3",
+    "si_value": 2780.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Tested in longitudinal (L) direction at room temperature in accordance with ASTM E8.",
     "caption": "Mechanical tensile properties, density, and fracture toughness (K1c)."
   },
@@ -6243,6 +6786,9 @@
     "value_numeric": 345.0,
     "value_raw": "345",
     "unit": "MPa",
+    "si_value": 345.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Tested in longitudinal (L) direction at room temperature in accordance with ASTM E8.",
     "caption": "Mechanical tensile properties, density, and fracture toughness (K1c)."
   },
@@ -6281,6 +6827,9 @@
     "value_numeric": 485.0,
     "value_raw": "485",
     "unit": "MPa",
+    "si_value": 485.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Tested in longitudinal (L) direction at room temperature in accordance with ASTM E8.",
     "caption": "Mechanical tensile properties, density, and fracture toughness (K1c)."
   },
@@ -6319,6 +6868,9 @@
     "value_numeric": 18.0,
     "value_raw": "18.0",
     "unit": "%",
+    "si_value": 18.0,
+    "si_unit": "%",
+    "source_type": "Table",
     "condition": "Tested in longitudinal (L) direction at room temperature in accordance with ASTM E8.",
     "caption": "Mechanical tensile properties, density, and fracture toughness (K1c)."
   },
@@ -6357,6 +6909,9 @@
     "value_numeric": 36.0,
     "value_raw": "36.0",
     "unit": "MPa",
+    "si_value": 36.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Tested in longitudinal (L) direction at room temperature in accordance with ASTM E8.",
     "caption": "Mechanical tensile properties, density, and fracture toughness (K1c)."
   },
@@ -6395,6 +6950,9 @@
     "value_numeric": 2.81,
     "value_raw": "2.81",
     "unit": "g/cm\u00b3",
+    "si_value": 2810.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Tested in longitudinal (L) direction at room temperature in accordance with ASTM E8.",
     "caption": "Mechanical tensile properties, density, and fracture toughness (K1c)."
   },
@@ -6433,6 +6991,9 @@
     "value_numeric": 505.0,
     "value_raw": "505",
     "unit": "MPa",
+    "si_value": 505.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Tested in longitudinal (L) direction at room temperature in accordance with ASTM E8.",
     "caption": "Mechanical tensile properties, density, and fracture toughness (K1c)."
   },
@@ -6471,6 +7032,9 @@
     "value_numeric": 570.0,
     "value_raw": "570",
     "unit": "MPa",
+    "si_value": 570.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Tested in longitudinal (L) direction at room temperature in accordance with ASTM E8.",
     "caption": "Mechanical tensile properties, density, and fracture toughness (K1c)."
   },
@@ -6509,6 +7073,9 @@
     "value_numeric": 11.0,
     "value_raw": "11.0",
     "unit": "%",
+    "si_value": 11.0,
+    "si_unit": "%",
+    "source_type": "Table",
     "condition": "Tested in longitudinal (L) direction at room temperature in accordance with ASTM E8.",
     "caption": "Mechanical tensile properties, density, and fracture toughness (K1c)."
   },
@@ -6547,6 +7114,9 @@
     "value_numeric": 29.0,
     "value_raw": "29.0",
     "unit": "MPa",
+    "si_value": 29.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Tested in longitudinal (L) direction at room temperature in accordance with ASTM E8.",
     "caption": "Mechanical tensile properties, density, and fracture toughness (K1c)."
   },
@@ -6585,6 +7155,9 @@
     "value_numeric": 2.7,
     "value_raw": "2.70",
     "unit": "g/cm\u00b3",
+    "si_value": 2700.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Tested in longitudinal (L) direction at room temperature in accordance with ASTM E8.",
     "caption": "Mechanical tensile properties, density, and fracture toughness (K1c)."
   },
@@ -6623,6 +7196,9 @@
     "value_numeric": 275.0,
     "value_raw": "275",
     "unit": "MPa",
+    "si_value": 275.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Tested in longitudinal (L) direction at room temperature in accordance with ASTM E8.",
     "caption": "Mechanical tensile properties, density, and fracture toughness (K1c)."
   },
@@ -6661,6 +7237,9 @@
     "value_numeric": 310.0,
     "value_raw": "310",
     "unit": "MPa",
+    "si_value": 310.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Tested in longitudinal (L) direction at room temperature in accordance with ASTM E8.",
     "caption": "Mechanical tensile properties, density, and fracture toughness (K1c)."
   },
@@ -6699,6 +7278,9 @@
     "value_numeric": 14.0,
     "value_raw": "14.0",
     "unit": "%",
+    "si_value": 14.0,
+    "si_unit": "%",
+    "source_type": "Table",
     "condition": "Tested in longitudinal (L) direction at room temperature in accordance with ASTM E8.",
     "caption": "Mechanical tensile properties, density, and fracture toughness (K1c)."
   },
@@ -6737,6 +7319,9 @@
     "value_numeric": 30.0,
     "value_raw": "30.0",
     "unit": "MPa",
+    "si_value": 30.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Tested in longitudinal (L) direction at room temperature in accordance with ASTM E8.",
     "caption": "Mechanical tensile properties, density, and fracture toughness (K1c)."
   },
@@ -6783,6 +7368,9 @@
     "value_numeric": 2.71,
     "value_raw": "2.71",
     "unit": "g/cm\u00b3",
+    "si_value": 2710.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Tested in longitudinal (L) direction at room temperature in accordance with ASTM E8.",
     "caption": "Mechanical tensile properties, density, and fracture toughness (K1c)."
   },
@@ -6829,6 +7417,9 @@
     "value_numeric": 565.0,
     "value_raw": "565",
     "unit": "MPa",
+    "si_value": 565.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Tested in longitudinal (L) direction at room temperature in accordance with ASTM E8.",
     "caption": "Mechanical tensile properties, density, and fracture toughness (K1c)."
   },
@@ -6875,6 +7466,9 @@
     "value_numeric": 605.0,
     "value_raw": "605",
     "unit": "MPa",
+    "si_value": 605.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Tested in longitudinal (L) direction at room temperature in accordance with ASTM E8.",
     "caption": "Mechanical tensile properties, density, and fracture toughness (K1c)."
   },
@@ -6921,6 +7515,9 @@
     "value_numeric": 9.5,
     "value_raw": "9.5",
     "unit": "%",
+    "si_value": 9.5,
+    "si_unit": "%",
+    "source_type": "Table",
     "condition": "Tested in longitudinal (L) direction at room temperature in accordance with ASTM E8.",
     "caption": "Mechanical tensile properties, density, and fracture toughness (K1c)."
   },
@@ -6967,6 +7564,9 @@
     "value_numeric": 34.0,
     "value_raw": "34.0",
     "unit": "MPa",
+    "si_value": 34.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Tested in longitudinal (L) direction at room temperature in accordance with ASTM E8.",
     "caption": "Mechanical tensile properties, density, and fracture toughness (K1c)."
   },
@@ -7009,6 +7609,9 @@
     "value_numeric": 2.83,
     "value_raw": "2.83",
     "unit": "g/cm\u00b3",
+    "si_value": 2830.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Tested in longitudinal (L) direction at room temperature in accordance with ASTM E8.",
     "caption": "Mechanical tensile properties, density, and fracture toughness (K1c)."
   },
@@ -7051,6 +7654,9 @@
     "value_numeric": 470.0,
     "value_raw": "470",
     "unit": "MPa",
+    "si_value": 470.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Tested in longitudinal (L) direction at room temperature in accordance with ASTM E8.",
     "caption": "Mechanical tensile properties, density, and fracture toughness (K1c)."
   },
@@ -7093,6 +7699,9 @@
     "value_numeric": 525.0,
     "value_raw": "525",
     "unit": "MPa",
+    "si_value": 525.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Tested in longitudinal (L) direction at room temperature in accordance with ASTM E8.",
     "caption": "Mechanical tensile properties, density, and fracture toughness (K1c)."
   },
@@ -7135,6 +7744,9 @@
     "value_numeric": 12.0,
     "value_raw": "12.0",
     "unit": "%",
+    "si_value": 12.0,
+    "si_unit": "%",
+    "source_type": "Table",
     "condition": "Tested in longitudinal (L) direction at room temperature in accordance with ASTM E8.",
     "caption": "Mechanical tensile properties, density, and fracture toughness (K1c)."
   },
@@ -7177,6 +7789,9 @@
     "value_numeric": 38.5,
     "value_raw": "38.5",
     "unit": "MPa",
+    "si_value": 38.5,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Tested in longitudinal (L) direction at room temperature in accordance with ASTM E8.",
     "caption": "Mechanical tensile properties, density, and fracture toughness (K1c)."
   },
@@ -7207,6 +7822,9 @@
     "value_numeric": 0.1,
     "value_raw": "0.100",
     "unit": "S/cm",
+    "si_value": 10.0,
+    "si_unit": "S/m",
+    "source_type": "Table",
     "condition": "Electrical conductivity determined by AC impedance spectroscopy from 500 to 900 deg C in air.",
     "caption": "Ionic conductivity, activation energy, and thermal expansion coefficients."
   },
@@ -7237,6 +7855,9 @@
     "value_numeric": 0.92,
     "value_raw": "0.92",
     "unit": "eV",
+    "si_value": 0.92,
+    "si_unit": "eV",
+    "source_type": "Table",
     "condition": "Electrical conductivity determined by AC impedance spectroscopy from 500 to 900 deg C in air.",
     "caption": "Ionic conductivity, activation energy, and thermal expansion coefficients."
   },
@@ -7267,6 +7888,9 @@
     "value_numeric": 10.5,
     "value_raw": "10.5",
     "unit": "K",
+    "si_value": 10.5,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Electrical conductivity determined by AC impedance spectroscopy from 500 to 900 deg C in air.",
     "caption": "Ionic conductivity, activation energy, and thermal expansion coefficients."
   },
@@ -7297,6 +7921,9 @@
     "value_numeric": 98.5,
     "value_raw": "98.5",
     "unit": "%",
+    "si_value": 98500.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Electrical conductivity determined by AC impedance spectroscopy from 500 to 900 deg C in air.",
     "caption": "Ionic conductivity, activation energy, and thermal expansion coefficients."
   },
@@ -7327,6 +7954,9 @@
     "value_numeric": 12.5,
     "value_raw": "12.5",
     "unit": "GPa",
+    "si_value": 12.5,
+    "si_unit": "HV",
+    "source_type": "Table",
     "condition": "Electrical conductivity determined by AC impedance spectroscopy from 500 to 900 deg C in air.",
     "caption": "Ionic conductivity, activation energy, and thermal expansion coefficients."
   },
@@ -7357,6 +7987,9 @@
     "value_numeric": 0.18,
     "value_raw": "0.180",
     "unit": "S/cm",
+    "si_value": 18.0,
+    "si_unit": "S/m",
+    "source_type": "Table",
     "condition": "Electrical conductivity determined by AC impedance spectroscopy from 500 to 900 deg C in air.",
     "caption": "Ionic conductivity, activation energy, and thermal expansion coefficients."
   },
@@ -7387,6 +8020,9 @@
     "value_numeric": 0.76,
     "value_raw": "0.76",
     "unit": "eV",
+    "si_value": 0.76,
+    "si_unit": "eV",
+    "source_type": "Table",
     "condition": "Electrical conductivity determined by AC impedance spectroscopy from 500 to 900 deg C in air.",
     "caption": "Ionic conductivity, activation energy, and thermal expansion coefficients."
   },
@@ -7417,6 +8053,9 @@
     "value_numeric": 12.2,
     "value_raw": "12.2",
     "unit": "K",
+    "si_value": 12.2,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Electrical conductivity determined by AC impedance spectroscopy from 500 to 900 deg C in air.",
     "caption": "Ionic conductivity, activation energy, and thermal expansion coefficients."
   },
@@ -7447,6 +8086,9 @@
     "value_numeric": 97.8,
     "value_raw": "97.8",
     "unit": "%",
+    "si_value": 97800.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Electrical conductivity determined by AC impedance spectroscopy from 500 to 900 deg C in air.",
     "caption": "Ionic conductivity, activation energy, and thermal expansion coefficients."
   },
@@ -7477,6 +8119,9 @@
     "value_numeric": 9.2,
     "value_raw": "9.2",
     "unit": "GPa",
+    "si_value": 9.2,
+    "si_unit": "HV",
+    "source_type": "Table",
     "condition": "Electrical conductivity determined by AC impedance spectroscopy from 500 to 900 deg C in air.",
     "caption": "Ionic conductivity, activation energy, and thermal expansion coefficients."
   },
@@ -7511,6 +8156,9 @@
     "value_numeric": 0.045,
     "value_raw": "0.045",
     "unit": "S/cm",
+    "si_value": 4.5,
+    "si_unit": "S/m",
+    "source_type": "Table",
     "condition": "Electrical conductivity determined by AC impedance spectroscopy from 500 to 900 deg C in air.",
     "caption": "Ionic conductivity, activation energy, and thermal expansion coefficients."
   },
@@ -7545,6 +8193,9 @@
     "value_numeric": 1.1,
     "value_raw": "1.10",
     "unit": "eV",
+    "si_value": 1.1,
+    "si_unit": "eV",
+    "source_type": "Table",
     "condition": "Electrical conductivity determined by AC impedance spectroscopy from 500 to 900 deg C in air.",
     "caption": "Ionic conductivity, activation energy, and thermal expansion coefficients."
   },
@@ -7579,6 +8230,9 @@
     "value_numeric": 12.8,
     "value_raw": "12.8",
     "unit": "K",
+    "si_value": 12.8,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Electrical conductivity determined by AC impedance spectroscopy from 500 to 900 deg C in air.",
     "caption": "Ionic conductivity, activation energy, and thermal expansion coefficients."
   },
@@ -7613,6 +8267,9 @@
     "value_numeric": 94.2,
     "value_raw": "94.2",
     "unit": "%",
+    "si_value": 94200.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Electrical conductivity determined by AC impedance spectroscopy from 500 to 900 deg C in air.",
     "caption": "Ionic conductivity, activation energy, and thermal expansion coefficients."
   },
@@ -7647,6 +8304,9 @@
     "value_numeric": 8.0,
     "value_raw": "8.0",
     "unit": "GPa",
+    "si_value": 8.0,
+    "si_unit": "HV",
+    "source_type": "Table",
     "condition": "Electrical conductivity determined by AC impedance spectroscopy from 500 to 900 deg C in air.",
     "caption": "Ionic conductivity, activation energy, and thermal expansion coefficients."
   },
@@ -7677,6 +8337,9 @@
     "value_numeric": 0.17,
     "value_raw": "0.170",
     "unit": "S/cm",
+    "si_value": 17.0,
+    "si_unit": "S/m",
+    "source_type": "Table",
     "condition": "Electrical conductivity determined by AC impedance spectroscopy from 500 to 900 deg C in air.",
     "caption": "Ionic conductivity, activation energy, and thermal expansion coefficients."
   },
@@ -7707,6 +8370,9 @@
     "value_numeric": 0.85,
     "value_raw": "0.85",
     "unit": "eV",
+    "si_value": 0.85,
+    "si_unit": "eV",
+    "source_type": "Table",
     "condition": "Electrical conductivity determined by AC impedance spectroscopy from 500 to 900 deg C in air.",
     "caption": "Ionic conductivity, activation energy, and thermal expansion coefficients."
   },
@@ -7737,6 +8403,9 @@
     "value_numeric": 11.4,
     "value_raw": "11.4",
     "unit": "K",
+    "si_value": 11.4,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Electrical conductivity determined by AC impedance spectroscopy from 500 to 900 deg C in air.",
     "caption": "Ionic conductivity, activation energy, and thermal expansion coefficients."
   },
@@ -7767,6 +8436,9 @@
     "value_numeric": 96.5,
     "value_raw": "96.5",
     "unit": "%",
+    "si_value": 96500.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Electrical conductivity determined by AC impedance spectroscopy from 500 to 900 deg C in air.",
     "caption": "Ionic conductivity, activation energy, and thermal expansion coefficients."
   },
@@ -7797,6 +8469,9 @@
     "value_numeric": 10.8,
     "value_raw": "10.8",
     "unit": "GPa",
+    "si_value": 10.8,
+    "si_unit": "HV",
+    "source_type": "Table",
     "condition": "Electrical conductivity determined by AC impedance spectroscopy from 500 to 900 deg C in air.",
     "caption": "Ionic conductivity, activation energy, and thermal expansion coefficients."
   },
@@ -7827,6 +8502,9 @@
     "value_numeric": 0.03,
     "value_raw": "0.030",
     "unit": "S/cm",
+    "si_value": 3.0,
+    "si_unit": "S/m",
+    "source_type": "Table",
     "condition": "Electrical conductivity determined by AC impedance spectroscopy from 500 to 900 deg C in air.",
     "caption": "Ionic conductivity, activation energy, and thermal expansion coefficients."
   },
@@ -7857,6 +8535,9 @@
     "value_numeric": 1.25,
     "value_raw": "1.25",
     "unit": "eV",
+    "si_value": 1.25,
+    "si_unit": "eV",
+    "source_type": "Table",
     "condition": "Electrical conductivity determined by AC impedance spectroscopy from 500 to 900 deg C in air.",
     "caption": "Ionic conductivity, activation energy, and thermal expansion coefficients."
   },
@@ -7887,6 +8568,9 @@
     "value_numeric": 15.3,
     "value_raw": "15.3",
     "unit": "K",
+    "si_value": 15.3,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Electrical conductivity determined by AC impedance spectroscopy from 500 to 900 deg C in air.",
     "caption": "Ionic conductivity, activation energy, and thermal expansion coefficients."
   },
@@ -7917,6 +8601,9 @@
     "value_numeric": 95.0,
     "value_raw": "95.0",
     "unit": "%",
+    "si_value": 95000.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Electrical conductivity determined by AC impedance spectroscopy from 500 to 900 deg C in air.",
     "caption": "Ionic conductivity, activation energy, and thermal expansion coefficients."
   },
@@ -7947,6 +8634,9 @@
     "value_numeric": 7.5,
     "value_raw": "7.5",
     "unit": "GPa",
+    "si_value": 7.5,
+    "si_unit": "HV",
+    "source_type": "Table",
     "condition": "Electrical conductivity determined by AC impedance spectroscopy from 500 to 900 deg C in air.",
     "caption": "Ionic conductivity, activation energy, and thermal expansion coefficients."
   },
@@ -7977,6 +8667,9 @@
     "value_numeric": -15.0,
     "value_raw": "-15.0",
     "unit": "\u00b0C",
+    "si_value": 258.15,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Transformation temperatures measured via DSC at 10 K/min. Superelastic strain recorded under tensile loading at Af + 15 deg C.",
     "caption": "Martensitic transformation temperatures, superelastic recoverable strain, and transformation plateau stress."
   },
@@ -8007,6 +8700,9 @@
     "value_numeric": 12.0,
     "value_raw": "12.0",
     "unit": "\u00b0C",
+    "si_value": 285.15,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Transformation temperatures measured via DSC at 10 K/min. Superelastic strain recorded under tensile loading at Af + 15 deg C.",
     "caption": "Martensitic transformation temperatures, superelastic recoverable strain, and transformation plateau stress."
   },
@@ -8037,6 +8733,9 @@
     "value_numeric": 8.2,
     "value_raw": "8.2",
     "unit": "%",
+    "si_value": 8.2,
+    "si_unit": "%",
+    "source_type": "Table",
     "condition": "Transformation temperatures measured via DSC at 10 K/min. Superelastic strain recorded under tensile loading at Af + 15 deg C.",
     "caption": "Martensitic transformation temperatures, superelastic recoverable strain, and transformation plateau stress."
   },
@@ -8067,6 +8766,9 @@
     "value_numeric": 420.0,
     "value_raw": "420",
     "unit": "MPa",
+    "si_value": 420.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Transformation temperatures measured via DSC at 10 K/min. Superelastic strain recorded under tensile loading at Af + 15 deg C.",
     "caption": "Martensitic transformation temperatures, superelastic recoverable strain, and transformation plateau stress."
   },
@@ -8097,6 +8799,9 @@
     "value_numeric": 6.45,
     "value_raw": "6.45",
     "unit": "g/cm\u00b3",
+    "si_value": 6450.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Transformation temperatures measured via DSC at 10 K/min. Superelastic strain recorded under tensile loading at Af + 15 deg C.",
     "caption": "Martensitic transformation temperatures, superelastic recoverable strain, and transformation plateau stress."
   },
@@ -8131,6 +8836,9 @@
     "value_numeric": 22.0,
     "value_raw": "22.0",
     "unit": "\u00b0C",
+    "si_value": 295.15,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Transformation temperatures measured via DSC at 10 K/min. Superelastic strain recorded under tensile loading at Af + 15 deg C.",
     "caption": "Martensitic transformation temperatures, superelastic recoverable strain, and transformation plateau stress."
   },
@@ -8165,6 +8873,9 @@
     "value_numeric": 48.0,
     "value_raw": "48.0",
     "unit": "\u00b0C",
+    "si_value": 321.15,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Transformation temperatures measured via DSC at 10 K/min. Superelastic strain recorded under tensile loading at Af + 15 deg C.",
     "caption": "Martensitic transformation temperatures, superelastic recoverable strain, and transformation plateau stress."
   },
@@ -8199,6 +8910,9 @@
     "value_numeric": 6.5,
     "value_raw": "6.5",
     "unit": "%",
+    "si_value": 6.5,
+    "si_unit": "%",
+    "source_type": "Table",
     "condition": "Transformation temperatures measured via DSC at 10 K/min. Superelastic strain recorded under tensile loading at Af + 15 deg C.",
     "caption": "Martensitic transformation temperatures, superelastic recoverable strain, and transformation plateau stress."
   },
@@ -8233,6 +8947,9 @@
     "value_numeric": 350.0,
     "value_raw": "350",
     "unit": "MPa",
+    "si_value": 350.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Transformation temperatures measured via DSC at 10 K/min. Superelastic strain recorded under tensile loading at Af + 15 deg C.",
     "caption": "Martensitic transformation temperatures, superelastic recoverable strain, and transformation plateau stress."
   },
@@ -8267,6 +8984,9 @@
     "value_numeric": 6.5,
     "value_raw": "6.50",
     "unit": "g/cm\u00b3",
+    "si_value": 6500.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Transformation temperatures measured via DSC at 10 K/min. Superelastic strain recorded under tensile loading at Af + 15 deg C.",
     "caption": "Martensitic transformation temperatures, superelastic recoverable strain, and transformation plateau stress."
   },
@@ -8297,6 +9017,9 @@
     "value_numeric": -40.0,
     "value_raw": "-40.0",
     "unit": "\u00b0C",
+    "si_value": 233.15,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Transformation temperatures measured via DSC at 10 K/min. Superelastic strain recorded under tensile loading at Af + 15 deg C.",
     "caption": "Martensitic transformation temperatures, superelastic recoverable strain, and transformation plateau stress."
   },
@@ -8327,6 +9050,9 @@
     "value_numeric": -10.0,
     "value_raw": "-10.0",
     "unit": "\u00b0C",
+    "si_value": 263.15,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Transformation temperatures measured via DSC at 10 K/min. Superelastic strain recorded under tensile loading at Af + 15 deg C.",
     "caption": "Martensitic transformation temperatures, superelastic recoverable strain, and transformation plateau stress."
   },
@@ -8357,6 +9083,9 @@
     "value_numeric": 4.8,
     "value_raw": "4.8",
     "unit": "%",
+    "si_value": 4.8,
+    "si_unit": "%",
+    "source_type": "Table",
     "condition": "Transformation temperatures measured via DSC at 10 K/min. Superelastic strain recorded under tensile loading at Af + 15 deg C.",
     "caption": "Martensitic transformation temperatures, superelastic recoverable strain, and transformation plateau stress."
   },
@@ -8387,6 +9116,9 @@
     "value_numeric": 280.0,
     "value_raw": "280",
     "unit": "MPa",
+    "si_value": 280.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Transformation temperatures measured via DSC at 10 K/min. Superelastic strain recorded under tensile loading at Af + 15 deg C.",
     "caption": "Martensitic transformation temperatures, superelastic recoverable strain, and transformation plateau stress."
   },
@@ -8417,6 +9149,9 @@
     "value_numeric": 7.12,
     "value_raw": "7.12",
     "unit": "g/cm\u00b3",
+    "si_value": 7120.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Transformation temperatures measured via DSC at 10 K/min. Superelastic strain recorded under tensile loading at Af + 15 deg C.",
     "caption": "Martensitic transformation temperatures, superelastic recoverable strain, and transformation plateau stress."
   },
@@ -8447,6 +9182,9 @@
     "value_numeric": -85.0,
     "value_raw": "-85.0",
     "unit": "\u00b0C",
+    "si_value": 188.15,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Transformation temperatures measured via DSC at 10 K/min. Superelastic strain recorded under tensile loading at Af + 15 deg C.",
     "caption": "Martensitic transformation temperatures, superelastic recoverable strain, and transformation plateau stress."
   },
@@ -8477,6 +9215,9 @@
     "value_numeric": -55.0,
     "value_raw": "-55.0",
     "unit": "\u00b0C",
+    "si_value": 218.15,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Transformation temperatures measured via DSC at 10 K/min. Superelastic strain recorded under tensile loading at Af + 15 deg C.",
     "caption": "Martensitic transformation temperatures, superelastic recoverable strain, and transformation plateau stress."
   },
@@ -8507,6 +9248,9 @@
     "value_numeric": 5.0,
     "value_raw": "5.0",
     "unit": "%",
+    "si_value": 5.0,
+    "si_unit": "%",
+    "source_type": "Table",
     "condition": "Transformation temperatures measured via DSC at 10 K/min. Superelastic strain recorded under tensile loading at Af + 15 deg C.",
     "caption": "Martensitic transformation temperatures, superelastic recoverable strain, and transformation plateau stress."
   },
@@ -8537,6 +9281,9 @@
     "value_numeric": 510.0,
     "value_raw": "510",
     "unit": "MPa",
+    "si_value": 510.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Transformation temperatures measured via DSC at 10 K/min. Superelastic strain recorded under tensile loading at Af + 15 deg C.",
     "caption": "Martensitic transformation temperatures, superelastic recoverable strain, and transformation plateau stress."
   },
@@ -8567,6 +9314,9 @@
     "value_numeric": 6.42,
     "value_raw": "6.42",
     "unit": "g/cm\u00b3",
+    "si_value": 6420.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Transformation temperatures measured via DSC at 10 K/min. Superelastic strain recorded under tensile loading at Af + 15 deg C.",
     "caption": "Martensitic transformation temperatures, superelastic recoverable strain, and transformation plateau stress."
   },
@@ -8601,6 +9351,9 @@
     "value_numeric": 180.0,
     "value_raw": "180.0",
     "unit": "\u00b0C",
+    "si_value": 453.15,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Transformation temperatures measured via DSC at 10 K/min. Superelastic strain recorded under tensile loading at Af + 15 deg C.",
     "caption": "Martensitic transformation temperatures, superelastic recoverable strain, and transformation plateau stress."
   },
@@ -8635,6 +9388,9 @@
     "value_numeric": 215.0,
     "value_raw": "215.0",
     "unit": "\u00b0C",
+    "si_value": 488.15,
+    "si_unit": "K",
+    "source_type": "Table",
     "condition": "Transformation temperatures measured via DSC at 10 K/min. Superelastic strain recorded under tensile loading at Af + 15 deg C.",
     "caption": "Martensitic transformation temperatures, superelastic recoverable strain, and transformation plateau stress."
   },
@@ -8669,6 +9425,9 @@
     "value_numeric": 3.8,
     "value_raw": "3.8",
     "unit": "%",
+    "si_value": 3.8,
+    "si_unit": "%",
+    "source_type": "Table",
     "condition": "Transformation temperatures measured via DSC at 10 K/min. Superelastic strain recorded under tensile loading at Af + 15 deg C.",
     "caption": "Martensitic transformation temperatures, superelastic recoverable strain, and transformation plateau stress."
   },
@@ -8703,6 +9462,9 @@
     "value_numeric": 620.0,
     "value_raw": "620",
     "unit": "MPa",
+    "si_value": 620.0,
+    "si_unit": "MPa",
+    "source_type": "Table",
     "condition": "Transformation temperatures measured via DSC at 10 K/min. Superelastic strain recorded under tensile loading at Af + 15 deg C.",
     "caption": "Martensitic transformation temperatures, superelastic recoverable strain, and transformation plateau stress."
   },
@@ -8737,6 +9499,9 @@
     "value_numeric": 7.28,
     "value_raw": "7.28",
     "unit": "g/cm\u00b3",
+    "si_value": 7280.0,
+    "si_unit": "kg/m\u00b3",
+    "source_type": "Table",
     "condition": "Transformation temperatures measured via DSC at 10 K/min. Superelastic strain recorded under tensile loading at Af + 15 deg C.",
     "caption": "Martensitic transformation temperatures, superelastic recoverable strain, and transformation plateau stress."
   }

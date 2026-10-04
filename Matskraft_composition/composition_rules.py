@@ -1,5 +1,5 @@
 """
-Chemical composition extraction rules and regular expression patterns for MatSKRAFT.
+Chemical composition extraction rules and regular expression patterns for CrystaGraph.
 Handles periodic table elements, oxide formulas, stoichiometry, and percentage unit matching.
 """
 

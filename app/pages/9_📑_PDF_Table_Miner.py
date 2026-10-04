@@ -16,7 +16,7 @@ sys.path.insert(0, os.path.join(PROJECT_ROOT, "downloading_and_preprocessing"))
 
 from pdf_table_extractor import PDFTableExtractor
 
-st.set_page_config(page_title="PDF Table Miner | MatGraph Extractor", page_icon="📑", layout="wide")
+st.set_page_config(page_title="PDF Table Miner | CrystaGraph", page_icon="📑", layout="wide")
 
 st.title("📑 Native PDF Research Paper Miner")
 st.caption("Directly extract tabular matrices, column headers, and material entries from scientific PDF documents.")

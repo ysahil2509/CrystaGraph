@@ -15,7 +15,7 @@ sys.path.insert(0, APP_DIR)
 
 from components.db_utils import query_df, get_dashboard_counts
 
-st.set_page_config(page_title="Analytics | MatGraph Extractor", page_icon="📈", layout="wide")
+st.set_page_config(page_title="Analytics | CrystaGraph", page_icon="📈", layout="wide")
 
 st.title("📈 Advanced Analytics & Validation")
 st.caption("Quantitative data quality metrics, property distributions, and export engine.")

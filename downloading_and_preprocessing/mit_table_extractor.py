@@ -1,5 +1,5 @@
 """
-MIT Table Extractor Module for MatSKRAFT.
+MIT Table Extractor Module for CrystaGraph.
 Parses scientific research tables from Elsevier / JATS / TEI XML formats,
 normalizing cell structures, headers, spans, captions, and footnotes.
 """
@@ -68,11 +68,15 @@ class MITTableExtractor:
         # Extract tables
         tables = self._extract_tables(root, metadata)
 
+        # Extract narrative paragraphs (sections, discussion, experimental)
+        paragraphs = self._extract_paragraphs(root)
+
         return {
             "success": True,
             "metadata": metadata,
             "tables": tables,
-            "table_count": len(tables)
+            "table_count": len(tables),
+            "paragraphs": paragraphs
         }
 
     def _extract_metadata(self, root: ET.Element) -> Dict[str, str]:
@@ -115,6 +119,18 @@ class MITTableExtractor:
                 break
 
         return metadata
+
+    def _extract_paragraphs(self, root: ET.Element) -> List[str]:
+        """Extracts all full-text narrative paragraphs from the document body."""
+        paragraphs = []
+        for tag in ['.//ce:para', './/ce:simple-para', './/p']:
+            nodes = root.findall(tag, self.namespaces) if 'ce:' in tag else root.findall(tag)
+            for n in nodes:
+                # Exclude paragraphs inside tables or table captions
+                txt = self.extract_element_text(n)
+                if txt and len(txt) > 25 and txt not in paragraphs:
+                    paragraphs.append(txt)
+        return paragraphs
 
     def _extract_tables(self, root: ET.Element, metadata: Dict[str, str]) -> List[Dict[str, Any]]:
         """Finds all table nodes (Elsevier and JATS) and converts them into structured table objects."""

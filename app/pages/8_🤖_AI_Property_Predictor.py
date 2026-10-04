@@ -19,7 +19,7 @@ sys.path.insert(0, os.path.join(PROJECT_ROOT, "models"))
 
 from models.train_property_predictor import MaterialPropertyPredictor
 
-st.set_page_config(page_title="AI Property Predictor | MatGraph Extractor", page_icon="🤖", layout="wide")
+st.set_page_config(page_title="AI Property Predictor | CrystaGraph", page_icon="🤖", layout="wide")
 
 st.title("🤖 AI Material Property Predictor")
 st.caption("Machine Learning regression models (Random Forest) trained on extracted literature data to forecast physical properties for novel alloy and ceramic chemistries.")

@@ -1,8 +1,8 @@
 #!/bin/bash
-# Startup script for MatGraph Extractor
+# Startup script for CrystaGraph
 
 echo "======================================================================="
-echo "   🔬 MatGraph Extractor: AI-Driven Material Knowledge Mining"
+echo "   🔬 CrystaGraph: AI-Driven Material Knowledge Mining"
 echo "======================================================================="
 
 # Step 1: Run automated paper processing and database population

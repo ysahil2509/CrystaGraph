@@ -1,5 +1,5 @@
 """
-MatSKRAFT Property Extractor Module.
+CrystaGraph Property Extractor Module.
 Identifies physical, mechanical, thermal, and electrical property records from scientific tables.
 """
 
@@ -7,6 +7,7 @@ import re
 from typing import List, Dict, Any, Optional
 from property_vocab import canonicalize_property, get_property_category
 from unit_normalizer import extract_unit_from_text
+from si_units import convert_to_si
 
 class PropertyExtractor:
     """
@@ -80,6 +81,8 @@ class PropertyExtractor:
                 except ValueError:
                     num_val = None
 
+                si_info = convert_to_si(num_val, prop_meta["unit"], prop_meta["canonical_name"])
+
                 extracted_properties.append({
                     "paper_id": paper_id,
                     "doi": doi,
@@ -91,6 +94,10 @@ class PropertyExtractor:
                     "value_raw": val_str,
                     "value_numeric": num_val,
                     "unit": prop_meta["unit"],
+                    "si_value": si_info["si_value"],
+                    "si_unit": si_info["si_unit"],
+                    "si_formatted": si_info["si_formatted"],
+                    "source_type": "Table",
                     "caption": caption,
                     "condition_footnote": footnote,
                     "confidence": 0.96

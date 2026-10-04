@@ -1,5 +1,5 @@
 """
-Production FastAPI REST Microservice for MatGraph Extractor.
+Production FastAPI REST Microservice for CrystaGraph.
 Provides high-performance RESTful API endpoints for knowledge retrieval,
 multi-paper querying, and machine learning material property prediction.
 """
@@ -25,7 +25,7 @@ from train_property_predictor import MaterialPropertyPredictor
 
 # Initialize FastAPI app
 app = FastAPI(
-    title="MatGraph Extractor API",
+    title="CrystaGraph API",
     description="RESTful API for AI-Driven Material Knowledge Mining and Machine Learning Property Prediction from Scientific Research Tables.",
     version="2.0.0",
     docs_url="/docs",
@@ -62,11 +62,11 @@ if os.path.exists(metadata_path):
 @app.get("/")
 def root():
     return {
-        "service": "MatGraph Extractor REST API",
+        "service": "CrystaGraph REST API",
         "status": "online",
         "version": "2.0.0",
         "documentation": "/docs",
-        "framework": "MatSKRAFT / FastAPI"
+        "framework": "CrystaGraph / FastAPI"
     }
 
 @app.get("/api/v1/health")

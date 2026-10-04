@@ -15,7 +15,7 @@ sys.path.insert(0, APP_DIR)
 from components.db_utils import query_df, get_all_papers
 from components.graph import build_knowledge_graph, plot_interactive_graph
 
-st.set_page_config(page_title="Knowledge Graph | MatGraph Extractor", page_icon="🕸️", layout="wide")
+st.set_page_config(page_title="Knowledge Graph | CrystaGraph", page_icon="🕸️", layout="wide")
 
 st.title("🕸️ Materials Knowledge Graph")
 st.caption("Multi-relational graph visualization connecting scientific papers, tables, material entities, and properties.")

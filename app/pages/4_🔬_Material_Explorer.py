@@ -14,7 +14,7 @@ sys.path.insert(0, APP_DIR)
 
 from components.db_utils import query_df
 
-st.set_page_config(page_title="Material Explorer | MatGraph Extractor", page_icon="🔬", layout="wide")
+st.set_page_config(page_title="Material Explorer | CrystaGraph", page_icon="🔬", layout="wide")
 
 st.title("🔬 Material Knowledge Explorer")
 st.caption("Search, filter, and inspect material entities, chemical stoichiometry, and experimental properties.")
@@ -61,13 +61,24 @@ ORDER BY percentage DESC;
 
 # Query Properties
 df_prop = query_df("""
-SELECT property_name, property_category, value_raw, unit, condition_footnote as condition, paper_id, table_id
+SELECT 
+    property_name as "Property",
+    property_category as "Category",
+    value_raw as "Reported Value",
+    unit as "Reported Unit",
+    CASE 
+        WHEN si_value IS NOT NULL AND si_unit != '' THEN PRINTF('%.2f %s', si_value, si_unit)
+        ELSE value_raw 
+    END as "Standard SI Measurement",
+    source_type as "Source",
+    paper_id as "Paper ID",
+    table_id as "Table/Section"
 FROM properties
 WHERE material_name = ?
 ORDER BY property_name;
 """, (selected_material,))
 
-col_info1, col_info2 = st.columns([1, 1])
+col_info1, col_info2 = st.columns([1, 1.2])
 
 with col_info1:
     st.markdown("### 🧩 Chemical Composition")
@@ -87,9 +98,9 @@ with col_info1:
         st.info("No detailed compositional breakdown tabulated for this entry.")
 
 with col_info2:
-    st.markdown("### ⚙️ Measured Properties")
+    st.markdown("### ⚙️ Measured Properties (Standard SI Units)")
     if not df_prop.empty:
-        st.dataframe(df_prop[["property_name", "value_raw", "unit", "property_category", "paper_id"]], use_container_width=True, hide_index=True)
+        st.dataframe(df_prop[["Property", "Standard SI Measurement", "Reported Value", "Category", "Source", "Paper ID"]], use_container_width=True, hide_index=True)
     else:
         st.info("No experimental properties linked to this entry.")
 

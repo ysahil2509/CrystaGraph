@@ -17,7 +17,7 @@ sys.path.insert(0, os.path.join(PROJECT_ROOT, "scripts"))
 from scripts.process_papers import run_pipeline
 from components.db_utils import query_df
 
-st.set_page_config(page_title="Processing Pipeline | MatGraph Extractor", page_icon="⚙️", layout="wide")
+st.set_page_config(page_title="Processing Pipeline | CrystaGraph", page_icon="⚙️", layout="wide")
 
 st.title("⚙️ Knowledge Mining & Ingestion Pipeline")
 st.caption("Upload scientific XML articles or trigger automated extraction over the existing repository.")
@@ -25,7 +25,7 @@ st.caption("Upload scientific XML articles or trigger automated extraction over 
 tab_run, tab_upload, tab_doi, tab_logs = st.tabs(["🚀 Execute Pipeline", "📤 Upload XMLs", "🌐 DOI Retrieval", "📜 Execution History"])
 
 with tab_run:
-    st.markdown("### 🔄 Run Complete MatSKRAFT Mining Pipeline")
+    st.markdown("### 🔄 Run Complete CrystaGraph Mining Pipeline")
     st.write("Executes table extraction, MatSciBERT tokenization, composition mining, property extraction, relation linking, and SQLite database ingestion.")
     
     col_btn, col_msg = st.columns([1, 3])

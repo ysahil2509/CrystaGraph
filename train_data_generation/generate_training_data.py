@@ -1,5 +1,5 @@
 """
-Train Data Generation for MatSKRAFT.
+Train Data Generation for CrystaGraph.
 Converts extracted tabular knowledge and paper contexts into annotated JSON/CoNLL sequences
 for training domain NER and relation extraction models.
 """

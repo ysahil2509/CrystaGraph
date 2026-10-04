@@ -1,5 +1,5 @@
 """
-Property Ontology and Vocabulary for MatSKRAFT.
+Property Ontology and Vocabulary for CrystaGraph.
 Defines canonical property names, synonym dictionaries, categories, and standard physical units.
 """
 

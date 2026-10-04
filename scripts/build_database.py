@@ -88,6 +88,9 @@ def init_database(db_path: str = DEFAULT_DB_PATH) -> sqlite3.Connection:
         value_numeric REAL,
         value_raw TEXT,
         unit TEXT,
+        si_value REAL,
+        si_unit TEXT,
+        source_type TEXT DEFAULT 'table',
         condition_footnote TEXT,
         paper_id TEXT,
         table_id TEXT,
@@ -108,6 +111,9 @@ def init_database(db_path: str = DEFAULT_DB_PATH) -> sqlite3.Connection:
         value_numeric REAL,
         value_raw TEXT,
         unit TEXT,
+        si_value REAL,
+        si_unit TEXT,
+        source_type TEXT DEFAULT 'table',
         condition_footnote TEXT,
         paper_id TEXT,
         doi TEXT,
@@ -115,6 +121,17 @@ def init_database(db_path: str = DEFAULT_DB_PATH) -> sqlite3.Connection:
         caption TEXT
     );
     """)
+
+    # Automatic non-destructive schema migrations for existing SQLite databases
+    for col, col_type in [("si_value", "REAL"), ("si_unit", "TEXT"), ("source_type", "TEXT DEFAULT 'table'")]:
+        try:
+            cursor.execute(f"ALTER TABLE properties ADD COLUMN {col} {col_type};")
+        except sqlite3.OperationalError:
+            pass
+        try:
+            cursor.execute(f"ALTER TABLE material_knowledge ADD COLUMN {col} {col_type};")
+        except sqlite3.OperationalError:
+            pass
 
     # 7. PIPELINE LOGS
     cursor.execute("""
@@ -224,8 +241,8 @@ def populate_database(
     # Insert Properties
     for pr in properties:
         cursor.execute("""
-        INSERT INTO properties (material_name, property_name, property_category, value_numeric, value_raw, unit, condition_footnote, paper_id, table_id, doi)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+        INSERT INTO properties (material_name, property_name, property_category, value_numeric, value_raw, unit, si_value, si_unit, source_type, condition_footnote, paper_id, table_id, doi)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
         """, (
             pr["material_name"],
             pr["property_name"],
@@ -233,6 +250,9 @@ def populate_database(
             pr.get("value_numeric"),
             pr.get("value_raw", ""),
             pr.get("unit", ""),
+            pr.get("si_value"),
+            pr.get("si_unit", ""),
+            pr.get("source_type", "table"),
             pr.get("condition_footnote", ""),
             pr["paper_id"],
             pr.get("table_id", ""),
@@ -242,8 +262,8 @@ def populate_database(
     # Insert Linked Knowledge
     for k in linked_knowledge:
         cursor.execute("""
-        INSERT INTO material_knowledge (material_name, normalized_material, composition_summary, property_name, property_category, value_numeric, value_raw, unit, condition_footnote, paper_id, doi, table_id, caption)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+        INSERT INTO material_knowledge (material_name, normalized_material, composition_summary, property_name, property_category, value_numeric, value_raw, unit, si_value, si_unit, source_type, condition_footnote, paper_id, doi, table_id, caption)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
         """, (
             k["material_name"],
             k.get("normalized_material", ""),
@@ -253,6 +273,9 @@ def populate_database(
             k.get("value_numeric"),
             k.get("value_raw", ""),
             k.get("unit", ""),
+            k.get("si_value"),
+            k.get("si_unit", ""),
+            k.get("source_type", "table"),
             k.get("condition", ""),
             k["paper_id"],
             k.get("doi", ""),
