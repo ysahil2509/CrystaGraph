@@ -30,12 +30,23 @@ Thumbs.db
 # Temporary uploads / scratch
 data/temp_pdf/*
 !data/temp_pdf/.gitkeep
+data/papers/uploaded/*
+!data/papers/uploaded/.gitkeep
 
 # IDE and Editor configs
 .vscode/
 .idea/
 *.swp
 *.swo
+
+# Node / Next.js
+node_modules/
+*/node_modules/
+.next/
+*/.next/
+out/
+build/
+*.tsbuildinfo
 
 # Test & coverage
 .pytest_cache/

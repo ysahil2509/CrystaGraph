@@ -148,6 +148,79 @@ def init_database(db_path: str = DEFAULT_DB_PATH) -> sqlite3.Connection:
     );
     """)
 
+    # 8. USERS (Multi-tenant Academic Auth)
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS users (
+        user_id TEXT PRIMARY KEY,
+        email TEXT UNIQUE NOT NULL,
+        hashed_password TEXT NOT NULL,
+        full_name TEXT NOT NULL,
+        institution TEXT DEFAULT 'BML Munjal University',
+        department TEXT DEFAULT 'Computer Science & Engineering',
+        role TEXT DEFAULT 'professor',
+        created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    );
+    """)
+
+    # 9. WORKSPACES
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS workspaces (
+        workspace_id TEXT PRIMARY KEY,
+        user_id TEXT NOT NULL,
+        title TEXT NOT NULL,
+        description TEXT,
+        created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+        FOREIGN KEY (user_id) REFERENCES users(user_id) ON DELETE CASCADE
+    );
+    """)
+
+    # 10. EXTRACTION JOBS
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS extraction_jobs (
+        job_id TEXT PRIMARY KEY,
+        user_id TEXT,
+        paper_id TEXT,
+        filename TEXT NOT NULL,
+        file_type TEXT NOT NULL,
+        status TEXT NOT NULL DEFAULT 'pending',
+        progress_pct INTEGER DEFAULT 0,
+        current_step TEXT DEFAULT 'Uploaded',
+        extracted_tables_count INTEGER DEFAULT 0,
+        extracted_compositions_count INTEGER DEFAULT 0,
+        extracted_properties_count INTEGER DEFAULT 0,
+        error_message TEXT,
+        created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+        completed_at DATETIME,
+        FOREIGN KEY (user_id) REFERENCES users(user_id) ON DELETE SET NULL
+    );
+    """)
+
+    # 11. USER CORRECTIONS (Academic Audit Trail)
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS user_corrections (
+        correction_id INTEGER PRIMARY KEY AUTOINCREMENT,
+        user_id TEXT,
+        paper_id TEXT NOT NULL,
+        table_id TEXT,
+        record_type TEXT NOT NULL,
+        target_id TEXT,
+        field_name TEXT NOT NULL,
+        original_value TEXT,
+        corrected_value TEXT NOT NULL,
+        academic_notes TEXT,
+        created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+        FOREIGN KEY (user_id) REFERENCES users(user_id) ON DELETE SET NULL
+    );
+    """)
+
+    # Add user_id and is_verified to core tables if not already present
+    for tbl in ["papers", "tables", "materials", "compositions", "properties", "material_knowledge"]:
+        for col, col_type in [("user_id", "TEXT"), ("is_verified", "INTEGER DEFAULT 1")]:
+            try:
+                cursor.execute(f"ALTER TABLE {tbl} ADD COLUMN {col} {col_type};")
+            except sqlite3.OperationalError:
+                pass
+
     # Create Indexes for lightning-fast search in Streamlit
     cursor.execute("CREATE INDEX IF NOT EXISTS idx_comp_mat ON compositions(material_name);")
     cursor.execute("CREATE INDEX IF NOT EXISTS idx_comp_component ON compositions(component);")

@@ -1,10 +1,42 @@
 version: '3.8'
 
 services:
-  # Streamlit Frontend Web Platform
-  matgraph-ui:
-    build: .
-    container_name: matgraph_streamlit_ui
+  # Next.js 14 Production Web Platform
+  crystagraph-frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: crystagraph_nextjs_ui
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+    depends_on:
+      - crystagraph-api
+    restart: unless-stopped
+
+  # FastAPI REST Microservice & Background Extraction Engine
+  crystagraph-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: crystagraph_fastapi_backend
+    ports:
+      - "8000:8000"
+    environment:
+      - ELSEVIER_API_KEY=${ELSEVIER_API_KEY:-}
+      - JWT_SECRET_KEY=${JWT_SECRET_KEY:-crystagraph_academic_secret_2024}
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+    command: ["uvicorn", "app.api:app", "--host", "0.0.0.0", "--port", "8000"]
+
+  # Optional: Legacy Streamlit Research Sandbox
+  crystagraph-streamlit:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: crystagraph_streamlit_ui
     ports:
       - "8501:8501"
     environment:
@@ -13,16 +45,3 @@ services:
       - ./data:/app/data
     restart: unless-stopped
     command: ["streamlit", "run", "app/streamlit_app.py", "--server.port=8501", "--server.address=0.0.0.0"]
-
-  # FastAPI REST Microservice
-  matgraph-api:
-    build: .
-    container_name: matgraph_fastapi_backend
-    ports:
-      - "8000:8000"
-    environment:
-      - ELSEVIER_API_KEY=${ELSEVIER_API_KEY:-}
-    volumes:
-      - ./data:/app/data
-    restart: unless-stopped
-    command: ["uvicorn", "app.api:app", "--host", "0.0.0.0", "--port", "8000"]
