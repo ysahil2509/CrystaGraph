@@ -3,15 +3,16 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { Atom, Lock, Mail, ArrowRight, AlertCircle } from "lucide-react";
+import { Atom, Lock, Mail, ArrowRight, AlertCircle, Loader2 } from "lucide-react";
 import { useAuth } from "@/lib/AuthContext";
 
 export default function LoginPage() {
   const router = useRouter();
-  const { login } = useAuth();
+  const { login, loginWithGoogle } = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+  const [isGoogleLoading, setIsGoogleLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
 
   const handleLogin = async (e: React.FormEvent) => {
@@ -21,7 +22,7 @@ export default function LoginPage() {
 
     try {
       await login(email, password);
-      router.push("/dashboard");
+      router.push("/");
     } catch (err: unknown) {
       if (err instanceof Error) {
         setErrorMsg(err.message);
@@ -33,105 +34,157 @@ export default function LoginPage() {
     }
   };
 
+  const handleGoogleSignIn = async () => {
+    setIsGoogleLoading(true);
+    setErrorMsg(null);
+    try {
+      await loginWithGoogle(email.trim() ? email.trim() : undefined);
+      router.push("/");
+    } catch {
+      setErrorMsg("Failed to sign in with Google. Please try again.");
+    } finally {
+      setIsGoogleLoading(false);
+    }
+  };
+
   return (
-    <div className="min-h-screen bg-slate-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
-      <div className="sm:mx-auto sm:w-full sm:max-w-md">
-        <Link href="/" className="flex items-center justify-center gap-2.5">
-          <div className="flex h-10 w-10 items-center justify-center rounded-md bg-slate-900 text-white font-semibold">
-            <Atom className="h-6 w-6 text-sky-400" />
+    <div className="min-h-screen bg-[#fafbfc] flex flex-col justify-center py-12 sm:px-6 lg:px-8 font-sans">
+      <div className="sm:mx-auto sm:w-full sm:max-w-md text-center">
+        <Link href="/" className="inline-flex items-center gap-2 group">
+          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-900 text-sky-400 group-hover:scale-105 transition-transform shadow-xs">
+            <Atom className="h-5 w-5" />
           </div>
-          <span className="text-xl font-bold tracking-tight text-slate-900">CrystaGraph</span>
+          <span className="text-xl font-bold tracking-tight text-slate-900">
+            CrystaGraph
+          </span>
         </Link>
-        <h2 className="mt-4 text-center text-lg font-bold tracking-tight text-slate-900">
-          Academic Research Sign In
+        <h2 className="mt-4 text-2xl font-bold tracking-tight text-slate-900">
+          Welcome back
         </h2>
-        <p className="mt-1 text-center text-xs text-slate-500">
-          Materials Informatics & Table Knowledge Extraction Workstation
+        <p className="mt-1 text-xs text-slate-500">
+          Sign in to access your previous paper chats &amp; extractions
         </p>
       </div>
 
       <div className="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-        <div className="bg-white py-8 px-4 shadow-sm border border-slate-200 sm:rounded-lg sm:px-10">
+        <div className="bg-white py-8 px-5 shadow-xs border border-slate-200/80 rounded-2xl sm:px-10">
+          {/* Sign In with Google Button */}
+          <button
+            type="button"
+            onClick={handleGoogleSignIn}
+            disabled={isGoogleLoading || isLoading}
+            className="w-full flex items-center justify-center gap-3 py-2.5 px-4 border border-slate-200 rounded-xl text-sm font-semibold text-slate-700 bg-white hover:bg-slate-50 hover:border-slate-300 transition-colors shadow-2xs disabled:opacity-60"
+          >
+            {isGoogleLoading ? (
+              <Loader2 className="h-4 w-4 animate-spin text-slate-500" />
+            ) : (
+              <svg className="h-4 w-4" viewBox="0 0 24 24">
+                <path
+                  fill="#4285F4"
+                  d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"
+                />
+                <path
+                  fill="#34A853"
+                  d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"
+                />
+                <path
+                  fill="#FBBC05"
+                  d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"
+                />
+                <path
+                  fill="#EA4335"
+                  d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"
+                />
+              </svg>
+            )}
+            <span>Continue with Google</span>
+          </button>
+
+          {/* Divider */}
+          <div className="relative my-6">
+            <div className="absolute inset-0 flex items-center">
+              <div className="w-full border-t border-slate-200" />
+            </div>
+            <div className="relative flex justify-center text-xs uppercase">
+              <span className="bg-white px-2.5 text-slate-400 font-medium">
+                or sign in with email
+              </span>
+            </div>
+          </div>
+
           {errorMsg && (
-            <div className="mb-5 rounded-md bg-rose-50 border border-rose-200 p-3 flex items-start gap-2.5 text-xs text-rose-800">
-              <AlertCircle className="h-4 w-4 text-rose-600 flex-shrink-0 mt-0.5" />
-              <div>
-                <p className="font-semibold">Authentication Failed</p>
-                <p className="mt-0.5 text-rose-700">{errorMsg}</p>
-              </div>
+            <div className="mb-4 rounded-xl bg-rose-50 border border-rose-200 p-3 flex items-start gap-2.5 text-xs text-rose-800">
+              <AlertCircle className="h-4 w-4 text-rose-600 shrink-0 mt-0.5" />
+              <p>{errorMsg}</p>
             </div>
           )}
 
-          <form className="space-y-5" onSubmit={handleLogin}>
+          <form className="space-y-4" onSubmit={handleLogin}>
             <div>
-              <label
-                htmlFor="email"
-                className="block text-xs font-medium text-slate-700 uppercase tracking-wider"
-              >
-                Institutional Email
+              <label className="block text-xs font-semibold text-slate-700 mb-1">
+                Email Address
               </label>
-              <div className="mt-1.5 relative rounded-md shadow-sm">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+              <div className="relative rounded-xl shadow-2xs">
+                <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
                   <Mail className="h-4 w-4 text-slate-400" />
                 </div>
                 <input
-                  id="email"
-                  name="email"
                   type="email"
-                  autoComplete="email"
                   required
-                  placeholder="name@institution.edu"
+                  placeholder="name@email.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="block w-full pl-9 pr-3 py-2 border border-slate-300 rounded-md text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-600 focus:border-sky-600"
+                  className="block w-full pl-10 pr-3.5 py-2.5 border border-slate-200 rounded-xl text-sm text-slate-900 bg-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-500/20 focus:border-sky-500 transition-all"
                 />
               </div>
             </div>
 
             <div>
-              <label
-                htmlFor="password"
-                className="block text-xs font-medium text-slate-700 uppercase tracking-wider"
-              >
+              <label className="block text-xs font-semibold text-slate-700 mb-1">
                 Password
               </label>
-              <div className="mt-1.5 relative rounded-md shadow-sm">
-                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+              <div className="relative rounded-xl shadow-2xs">
+                <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none">
                   <Lock className="h-4 w-4 text-slate-400" />
                 </div>
                 <input
-                  id="password"
-                  name="password"
                   type="password"
-                  autoComplete="current-password"
                   required
-                  placeholder="••••••••"
+                  placeholder="Your password"
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
-                  className="block w-full pl-9 pr-3 py-2 border border-slate-300 rounded-md text-sm text-slate-900 placeholder-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-600 focus:border-sky-600"
+                  className="block w-full pl-10 pr-3.5 py-2.5 border border-slate-200 rounded-xl text-sm text-slate-900 bg-white placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-sky-500/20 focus:border-sky-500 transition-all"
                 />
               </div>
             </div>
 
-            <div>
-              <button
-                type="submit"
-                disabled={isLoading}
-                className="w-full flex justify-center items-center gap-2 py-2.5 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-slate-900 hover:bg-slate-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-900 transition-colors"
-              >
-                {isLoading ? "Signing in..." : "Enter Workspace"}
-                <ArrowRight className="h-4 w-4" />
-              </button>
-            </div>
+            <button
+              type="submit"
+              disabled={isLoading || isGoogleLoading}
+              className="w-full flex items-center justify-center gap-2 py-2.5 px-4 rounded-xl text-sm font-semibold text-white bg-slate-900 hover:bg-slate-800 transition-colors shadow-sm disabled:opacity-60 mt-2"
+            >
+              {isLoading ? (
+                <>
+                  <Loader2 className="h-4 w-4 animate-spin text-white" />
+                  <span>Signing In...</span>
+                </>
+              ) : (
+                <>
+                  <span>Sign In</span>
+                  <ArrowRight className="h-4 w-4" />
+                </>
+              )}
+            </button>
           </form>
 
-          <div className="mt-6 border-t border-slate-100 pt-4 text-center">
-            <p className="text-xs text-slate-500">
-              Need a researcher or student workspace?{" "}
-              <Link href="/register" className="font-semibold text-sky-700 hover:text-sky-800">
-                Sign up here &rarr;
-              </Link>
-            </p>
+          <div className="mt-6 text-center text-xs text-slate-500">
+            Don&apos;t have an account?{" "}
+            <Link
+              href="/register"
+              className="font-semibold text-sky-600 hover:text-sky-700 hover:underline"
+            >
+              Sign up
+            </Link>
           </div>
         </div>
       </div>
