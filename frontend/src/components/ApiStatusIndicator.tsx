@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { Activity, CheckCircle2, AlertCircle, RefreshCw } from "lucide-react";
 
 export default function ApiStatusIndicator() {
@@ -8,15 +8,17 @@ export default function ApiStatusIndicator() {
   const [latency, setLatency] = useState<number | null>(null);
   const [showTooltip, setShowTooltip] = useState(false);
 
-  const checkHealth = async () => {
-    const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+  const apiUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+  const isLocal = apiUrl.includes("localhost") || apiUrl.includes("127.0.0.1");
+  const apiBadgeLabel = isLocal ? "API :8000" : "API Cloud";
+
+  const checkHealth = useCallback(async () => {
     const startTime = performance.now();
     try {
       const res = await fetch(`${apiUrl}/api/v1/health`, {
         method: "GET",
         headers: { "Content-Type": "application/json" },
-        // short timeout
-        signal: AbortSignal.timeout(3000),
+        signal: AbortSignal.timeout(4000),
       });
       const endTime = performance.now();
       if (res.ok) {
@@ -30,13 +32,13 @@ export default function ApiStatusIndicator() {
       setStatus("offline");
       setLatency(null);
     }
-  };
+  }, [apiUrl]);
 
   useEffect(() => {
     checkHealth();
     const interval = setInterval(checkHealth, 30000); // Check every 30s
     return () => clearInterval(interval);
-  }, []);
+  }, [checkHealth]);
 
   return (
     <div className="relative inline-block">
@@ -67,7 +69,7 @@ export default function ApiStatusIndicator() {
 
         <span>
           {status === "online"
-            ? `API :8000${latency !== null ? ` (${latency}ms)` : ""}`
+            ? `${apiBadgeLabel}${latency !== null ? ` (${latency}ms)` : ""}`
             : status === "offline"
             ? "API Offline"
             : "Checking..."}
@@ -101,9 +103,10 @@ export default function ApiStatusIndicator() {
                 FastAPI microservice connected
               </p>
               <p className="text-[11px] text-slate-500">
-                Port 8000 &bull; SQLite database online. Swagger available at{" "}
+                {isLocal ? "Local development server." : "Cloud production deployment."}{" "}
+                Swagger docs available at{" "}
                 <a
-                  href="http://localhost:8000/docs"
+                  href={`${apiUrl}/docs`}
                   target="_blank"
                   rel="noreferrer"
                   className="text-sky-600 underline font-mono"
@@ -120,11 +123,17 @@ export default function ApiStatusIndicator() {
                 Backend not responding
               </p>
               <p className="text-[11px] text-slate-500">
-                Start the backend using:
+                {isLocal ? (
+                  <>
+                    Start backend with:{" "}
+                    <code className="bg-slate-100 px-1 py-0.5 rounded font-mono text-[10px]">
+                      ./start_platform.sh
+                    </code>
+                  </>
+                ) : (
+                  <>Verify your cloud service status on Render or Railway.</>
+                )}
               </p>
-              <pre className="bg-slate-100 p-1.5 rounded font-mono text-[10px] text-slate-800">
-                ./start_platform.sh
-              </pre>
             </div>
           )}
         </div>
@@ -132,4 +141,3 @@ export default function ApiStatusIndicator() {
     </div>
   );
 }
-
