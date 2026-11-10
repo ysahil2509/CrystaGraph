@@ -1,0 +1,17 @@
+# Koyeb Service Configuration for CrystaGraph FastAPI Microservice
+name: crystagraph-api
+type: web
+docker:
+  dockerfile: Dockerfile
+ports:
+  - port: 8000
+    protocol: http
+routes:
+  - path: /
+    port: 8000
+health_checks:
+  - http:
+      port: 8000
+      path: /api/v1/health
+      interval: 30
+      timeout: 5
