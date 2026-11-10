@@ -1,6 +1,8 @@
 # MatGraph Extractor: Requirements & Dependencies
 fastapi>=0.100.0
 uvicorn>=0.22.0
+httpx>=0.24.0
+httpx2>=2.0.0
 pyjwt>=2.8.0
 python-multipart>=0.0.6
 pydantic>=2.0.0
