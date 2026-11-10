@@ -3,7 +3,9 @@
  * Provides typed HTTP communication with the FastAPI microservice.
  */
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+const API_BASE_URL = (process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000")
+  .trim()
+  .replace(/\/+$/, "");
 
 export interface UserProfile {
   user_id: string;
