@@ -15,6 +15,7 @@ import {
   PanelLeftClose,
   Search,
   Sparkles,
+  Lock,
 } from "lucide-react";
 import { useAuth } from "@/lib/AuthContext";
 import { ChatMessage } from "./CleanChatGptHome";
@@ -146,12 +147,41 @@ export default function ChatSidebar({
                 <Sparkles className="h-3 w-3 text-sky-400" />
                 Previous Chats &amp; Papers
               </span>
-              <span className="font-mono text-slate-400 text-[10px]">
-                {filteredSessions.length}
-              </span>
+              {user && (
+                <span className="font-mono text-slate-400 text-[10px]">
+                  {filteredSessions.length}
+                </span>
+              )}
             </div>
 
-            {filteredSessions.length === 0 ? (
+            {!user ? (
+              /* Locked State when Not Logged In */
+              <div className="p-3.5 bg-[#212121] border border-[#303030] rounded-xl text-center space-y-2.5 my-2">
+                <div className="flex h-9 w-9 mx-auto items-center justify-center rounded-xl bg-sky-500/10 text-sky-400 border border-sky-500/20">
+                  <Lock className="h-4 w-4" />
+                </div>
+                <div>
+                  <p className="text-xs font-semibold text-white">Previous Chats Locked</p>
+                  <p className="text-[11px] text-slate-400 mt-0.5 leading-snug">
+                    Sign in to access your saved conversations, extractions &amp; paper history.
+                  </p>
+                </div>
+                <div className="flex items-center gap-1.5 pt-1">
+                  <Link
+                    href="/login"
+                    className="flex-1 py-1.5 px-2.5 rounded-lg text-xs font-medium text-white bg-[#2a2a2a] hover:bg-[#333] border border-[#383838] transition-colors text-center"
+                  >
+                    Log In
+                  </Link>
+                  <Link
+                    href="/register"
+                    className="flex-1 py-1.5 px-2.5 rounded-lg text-xs font-semibold text-slate-950 bg-sky-400 hover:bg-sky-300 transition-colors text-center shadow-xs"
+                  >
+                    Sign Up
+                  </Link>
+                </div>
+              </div>
+            ) : filteredSessions.length === 0 ? (
               <p className="px-3 py-4 text-xs text-slate-500 text-center">
                 No matching conversations found.
               </p>

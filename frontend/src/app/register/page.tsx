@@ -2,12 +2,10 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { Atom, Lock, Mail, User, ArrowRight, AlertCircle, Loader2 } from "lucide-react";
 import { useAuth } from "@/lib/AuthContext";
 
 export default function RegisterPage() {
-  const router = useRouter();
   const { register, loginWithGoogle } = useAuth();
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -27,7 +25,7 @@ export default function RegisterPage() {
         password,
         full_name: fullName,
       });
-      router.push("/");
+      window.location.href = "/";
     } catch (err: unknown) {
       if (err instanceof Error) {
         setErrorMsg(err.message);
@@ -47,7 +45,7 @@ export default function RegisterPage() {
         email.trim() ? email.trim() : undefined,
         fullName.trim() ? fullName.trim() : undefined
       );
-      router.push("/");
+      window.location.href = "/";
     } catch {
       setErrorMsg("Failed to authenticate with Google. Please try again.");
     } finally {

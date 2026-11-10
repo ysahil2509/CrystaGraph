@@ -2,12 +2,10 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { Atom, Lock, Mail, ArrowRight, AlertCircle, Loader2 } from "lucide-react";
 import { useAuth } from "@/lib/AuthContext";
 
 export default function LoginPage() {
-  const router = useRouter();
   const { login, loginWithGoogle } = useAuth();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -22,7 +20,7 @@ export default function LoginPage() {
 
     try {
       await login(email, password);
-      router.push("/");
+      window.location.href = "/";
     } catch (err: unknown) {
       if (err instanceof Error) {
         setErrorMsg(err.message);
@@ -39,7 +37,7 @@ export default function LoginPage() {
     setErrorMsg(null);
     try {
       await loginWithGoogle(email.trim() ? email.trim() : undefined);
-      router.push("/");
+      window.location.href = "/";
     } catch {
       setErrorMsg("Failed to sign in with Google. Please try again.");
     } finally {

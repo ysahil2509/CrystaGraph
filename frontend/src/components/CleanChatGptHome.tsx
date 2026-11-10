@@ -322,7 +322,7 @@ export default function CleanChatGptHome({ embedded = false }: CleanChatGptHomeP
   // Chat History & Sessions
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [sessions, setSessions] = useState<ChatSession[]>(DEFAULT_BENCHMARK_SESSIONS);
-  const [activeSessionId, setActiveSessionId] = useState<string | null>("session_ti_6al_4v");
+  const [activeSessionId, setActiveSessionId] = useState<string | null>(null);
 
   // Drawers & Modals
   const [isPapersOpen, setIsPapersOpen] = useState(false);
@@ -343,23 +343,24 @@ export default function CleanChatGptHome({ embedded = false }: CleanChatGptHomeP
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
-  // Load saved sessions from localStorage
+  // Load saved sessions from localStorage (ALWAYS start with a fresh new chat on open)
   useEffect(() => {
+    setMessages([]);
+    setActiveSessionId(null);
+    setInput("");
+    setAttachedFiles([]);
+
     try {
       const saved = localStorage.getItem("crystagraph_chat_sessions");
       if (saved) {
         const parsed = JSON.parse(saved);
         if (Array.isArray(parsed) && parsed.length > 0) {
           setSessions(parsed);
-          setActiveSessionId(parsed[0].id);
-          setMessages(parsed[0].messages || []);
           return;
         }
       }
     } catch {}
     setSessions(DEFAULT_BENCHMARK_SESSIONS);
-    setActiveSessionId(DEFAULT_BENCHMARK_SESSIONS[0].id);
-    setMessages(DEFAULT_BENCHMARK_SESSIONS[0].messages);
   }, []);
 
   // Responsive sidebar: collapse on small screens
@@ -431,6 +432,10 @@ export default function CleanChatGptHome({ embedded = false }: CleanChatGptHomeP
   };
 
   const handleSelectSession = (session: ChatSession) => {
+    if (!user) {
+      window.location.href = "/login";
+      return;
+    }
     setActiveSessionId(session.id);
     setMessages(session.messages || []);
     if (typeof window !== "undefined" && window.innerWidth < 768) {
