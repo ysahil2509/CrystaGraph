@@ -4,7 +4,7 @@ FROM python:3.11-slim
 # Set environment variables
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
-    PORT=8501
+    PORT=8000
 
 WORKDIR /app
 
@@ -28,11 +28,11 @@ RUN python3 scripts/generate_sample_xmls.py && \
     python3 scripts/process_papers.py && \
     python3 models/train_property_predictor.py
 
-# Expose Streamlit (8501) and FastAPI (8000)
-EXPOSE 8501 8000
+# Expose FastAPI (8000)
+EXPOSE 8000
 
 # Healthcheck
-HEALTHCHECK CMD curl --fail http://localhost:8501/_stcore/health || exit 1
+HEALTHCHECK CMD curl --fail http://localhost:8000/api/v1/health || exit 1
 
-# Default command to run Streamlit platform
-CMD ["streamlit", "run", "app/streamlit_app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+# Default command to run FastAPI microservice
+CMD ["sh", "-c", "uvicorn app.api:app --host 0.0.0.0 --port ${PORT:-8000}"]
