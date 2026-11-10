@@ -12,7 +12,7 @@
   "Linked Knowledge Triples": 255,
   "Numeric Property Value Ratio (%)": 98.43,
   "Unit Completeness Ratio (%)": 98.04,
-  "Total Pipeline Execution Time (s)": 0.071,
-  "Avg Processing Time Per Paper (s)": 0.007,
-  "Avg Processing Time Per Table (s)": 0.004
+  "Total Pipeline Execution Time (s)": 0.056,
+  "Avg Processing Time Per Paper (s)": 0.006,
+  "Avg Processing Time Per Table (s)": 0.003
 }
