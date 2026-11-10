@@ -13,3 +13,4 @@ services:
       - key: CRYSTAGRAPH_JWT_SECRET
         generateValue: true
     healthCheckPath: /api/v1/health
+
