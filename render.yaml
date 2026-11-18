@@ -1,3 +1,10 @@
+databases:
+  - name: crystagraph-postgres
+    databaseName: crystagraph
+    user: crystagraph_user
+    plan: free
+    region: oregon
+
 services:
   - type: web
     name: crystagraph-api
@@ -5,12 +12,15 @@ services:
     region: oregon
     plan: free
     branch: main
-    buildCommand: pip install -r requirements.txt && python3 scripts/build_database.py && python3 scripts/process_papers.py && python3 models/train_property_predictor.py
-    startCommand: uvicorn app.api:app --host 0.0.0.0 --port $PORT
+    buildCommand: pip install -r requirements.txt && python3 scripts/generate_sample_xmls.py && python3 scripts/build_database.py && python3 scripts/process_papers.py && python3 models/train_property_predictor.py
+    startCommand: python3 server.py
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.9
+      - key: DATABASE_URL
+        fromDatabase:
+          name: crystagraph-postgres
+          property: connectionString
       - key: CRYSTAGRAPH_JWT_SECRET
         generateValue: true
     healthCheckPath: /api/v1/health
-

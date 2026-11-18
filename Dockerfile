@@ -35,4 +35,4 @@ EXPOSE 8000
 HEALTHCHECK CMD curl --fail http://localhost:8000/api/v1/health || exit 1
 
 # Default command to run FastAPI microservice
-CMD ["sh", "-c", "uvicorn app.api:app --host 0.0.0.0 --port ${PORT:-8000}"]
+CMD ["python3", "server.py"]
