@@ -3,9 +3,22 @@
  * Provides typed HTTP communication with the FastAPI microservice.
  */
 
-const API_BASE_URL = (process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000")
-  .trim()
-  .replace(/\/+$/, "");
+function getApiBaseUrl(): string {
+  if (process.env.NEXT_PUBLIC_API_URL) {
+    return process.env.NEXT_PUBLIC_API_URL.trim().replace(/\/+$/, "");
+  }
+  if (typeof window !== "undefined") {
+    // In local development, connect directly to FastAPI port 8000
+    if (window.location.hostname === "localhost" || window.location.hostname === "127.0.0.1") {
+      return "http://localhost:8000";
+    }
+    // On deployed Vercel host, use relative path so Next.js rewrites proxy to backend
+    return "";
+  }
+  return "http://localhost:8000";
+}
+
+const API_BASE_URL = getApiBaseUrl();
 
 export interface UserProfile {
   user_id: string;

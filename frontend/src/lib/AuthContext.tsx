@@ -174,7 +174,13 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         setUser(res.user);
         setAuthSession(res.access_token, res.user);
         return;
-      } catch {
+      } catch (backendErr: unknown) {
+        if (
+          backendErr instanceof Error &&
+          backendErr.message.toLowerCase().includes("already exists")
+        ) {
+          throw backendErr;
+        }
         // If backend unreachable during demo, create local authenticated user
         const fallbackUser: UserProfile = {
           user_id: `usr_${Date.now()}`,

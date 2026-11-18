@@ -198,7 +198,8 @@ class MITTableExtractor:
                 for tr in thead.findall('.//tr'):
                     headers = [self.extract_element_text(th) for th in (tr.findall('th') or tr.findall('td'))]
             
-            tbody = tbl_node.find('.//tbody') or tbl_node
+            tbody_node = tbl_node.find('.//tbody')
+            tbody = tbody_node if tbody_node is not None else tbl_node
             for tr in tbody.findall('.//tr'):
                 # Check if this row is just headers
                 ths = tr.findall('th')
@@ -244,5 +245,8 @@ class MITTableExtractor:
             "raw_df": df_raw,
             "cleaned_df": df_cleaned,
             "raw_dict": df_raw.to_dict(orient="records"),
-            "cleaned_dict": df_cleaned.to_dict(orient="records")
+            "cleaned_dict": df_cleaned.to_dict(orient="records"),
+            "raw_records": df_raw.to_dict(orient="records"),
+            "cleaned_records": df_cleaned.to_dict(orient="records"),
+            "rows": padded_rows
         }

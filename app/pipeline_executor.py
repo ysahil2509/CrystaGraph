@@ -39,6 +39,8 @@ def update_job_status(
     prop_cnt: int = 0,
     error_msg: Optional[str] = None,
     paper_id: Optional[str] = None,
+    filename: Optional[str] = None,
+    file_type: Optional[str] = None,
 ):
     """Updates extraction job status in SQLite database."""
     conn = get_connection()
@@ -64,6 +66,26 @@ def update_job_status(
                 {paper_clause}
             WHERE job_id = ?;
         """, params)
+        if c.rowcount == 0:
+            c.execute("""
+                INSERT INTO extraction_jobs (
+                    job_id, filename, file_type, status, progress_pct, current_step,
+                    extracted_tables_count, extracted_compositions_count, extracted_properties_count,
+                    error_message, paper_id
+                ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?);
+            """, (
+                job_id,
+                filename or f"paper_{job_id[:8]}",
+                file_type or "xml",
+                status,
+                progress_pct,
+                current_step,
+                tables_cnt,
+                comp_cnt,
+                prop_cnt,
+                error_msg,
+                paper_id
+            ))
         conn.commit()
     finally:
         conn.close()
@@ -127,17 +149,20 @@ def execute_extraction_pipeline(
             raw_tables = res.get("tables", [])
             for idx, tbl in enumerate(raw_tables):
                 t_id = tbl.get("table_id") or f"tbl_{idx+1:04d}"
+                c_recs = tbl.get("cleaned_records") or tbl.get("cleaned_dict") or tbl.get("rows") or []
+                r_recs = tbl.get("raw_records") or tbl.get("raw_dict") or tbl.get("rows") or []
+                headers = tbl.get("headers", [])
                 tables.append({
                     "paper_id": paper_id,
                     "table_id": t_id,
                     "doi": paper_meta["doi"],
                     "caption": tbl.get("caption", f"Extracted Table {idx+1}"),
                     "footnote": tbl.get("footnote", ""),
-                    "headers": tbl.get("headers", []),
-                    "num_rows": tbl.get("num_rows", len(tbl.get("rows", []))),
-                    "num_cols": tbl.get("num_cols", len(tbl.get("headers", []))),
-                    "raw_records": tbl.get("raw_records", tbl.get("rows", [])),
-                    "cleaned_records": tbl.get("cleaned_records", tbl.get("rows", [])),
+                    "headers": headers,
+                    "num_rows": tbl.get("num_rows", len(c_recs)),
+                    "num_cols": tbl.get("num_cols", len(headers)),
+                    "raw_records": r_recs,
+                    "cleaned_records": c_recs,
                 })
         else:
             # PDF file
