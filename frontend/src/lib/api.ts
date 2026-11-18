@@ -62,6 +62,26 @@ export interface WorkspaceSummary {
   active_user: string;
 }
 
+export interface ExtractedTableData {
+  title: string;
+  table_id?: string;
+  headers: string[];
+  rows: string[][];
+}
+
+export interface ExtractedCompositionData {
+  material: string;
+  formula: string;
+  fractions: string;
+}
+
+export interface ExtractedPropertyData {
+  property: string;
+  value: string;
+  siValue: string;
+  unit: string;
+}
+
 export interface JobStatusResponse {
   job_id: string;
   user_id?: string;
@@ -77,6 +97,9 @@ export interface JobStatusResponse {
   error_message?: string;
   created_at: string;
   completed_at?: string;
+  tables?: ExtractedTableData[];
+  compositions?: ExtractedCompositionData[];
+  properties?: ExtractedPropertyData[];
 }
 
 export function getAuthToken(): string | null {

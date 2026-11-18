@@ -407,7 +407,7 @@ def get_extraction_job_status(job_id: str):
         if not row:
             raise HTTPException(status_code=404, detail=f"Extraction job '{job_id}' not found")
 
-        return {
+        res = {
             "job_id": row[0],
             "user_id": row[1],
             "paper_id": row[2],
@@ -420,9 +420,80 @@ def get_extraction_job_status(job_id: str):
             "extracted_compositions_count": row[9],
             "extracted_properties_count": row[10],
             "error_message": row[11],
-            "created_at": row[12],
-            "completed_at": row[13],
+            "created_at": str(row[12]) if row[12] else "",
+            "completed_at": str(row[13]) if row[13] else None,
+            "tables": [],
+            "compositions": [],
+            "properties": []
         }
+
+        # If job is completed and paper_id exists, fetch actual extracted data
+        paper_id = row[2]
+        if row[5] == "completed" and paper_id:
+            # 1. Real Tables from document
+            c.execute("""
+                SELECT table_id, caption, headers_json, cleaned_data_json
+                FROM tables WHERE paper_id = ? ORDER BY table_id;
+            """, (paper_id,))
+            for t_row in c.fetchall():
+                t_id = t_row[0]
+                caption = t_row[1] or f"Table {t_id}"
+                headers = json.loads(t_row[2]) if t_row[2] else []
+                raw_recs = json.loads(t_row[3]) if t_row[3] else []
+                
+                rows_matrix = []
+                for rec in raw_recs:
+                    if isinstance(rec, dict):
+                        row_cells = [str(rec.get(h, "-")) for h in headers] if headers else [str(v) for v in rec.values()]
+                        rows_matrix.append(row_cells)
+                    elif isinstance(rec, list):
+                        rows_matrix.append([str(x) for x in rec])
+
+                res["tables"].append({
+                    "table_id": t_id,
+                    "title": caption,
+                    "headers": headers,
+                    "rows": rows_matrix
+                })
+
+            # 2. Real Compositions from document
+            c.execute("""
+                SELECT material_name, component, percentage, unit
+                FROM compositions WHERE paper_id = ? LIMIT 50;
+            """, (paper_id,))
+            for comp_row in c.fetchall():
+                mat_name = comp_row[0]
+                comp_elem = comp_row[1]
+                pct = comp_row[2]
+                unit = comp_row[3] or "wt.%"
+                pct_str = f"{pct:g}{unit}" if pct is not None else unit
+                res["compositions"].append({
+                    "material": mat_name,
+                    "formula": f"{mat_name} ({comp_elem})",
+                    "fractions": f"{comp_elem}: {pct_str}"
+                })
+
+            # 3. Real Properties with Canonical SI Units
+            c.execute("""
+                SELECT material_name, property_name, value_raw, si_value, si_unit, unit
+                FROM properties WHERE paper_id = ? LIMIT 50;
+            """, (paper_id,))
+            for prop_row in c.fetchall():
+                mat_name = prop_row[0]
+                prop_name = prop_row[1]
+                val_raw = prop_row[2] or "-"
+                si_val = prop_row[3]
+                si_unit = prop_row[4] or ""
+                orig_unit = prop_row[5] or ""
+                si_str = f"{si_val:g} {si_unit}" if si_val is not None and si_unit else val_raw
+                res["properties"].append({
+                    "property": f"{prop_name} ({mat_name})",
+                    "value": f"{val_raw} {orig_unit}".strip(),
+                    "siValue": si_str,
+                    "unit": si_unit or orig_unit
+                })
+
+        return res
     finally:
         conn.close()
 
